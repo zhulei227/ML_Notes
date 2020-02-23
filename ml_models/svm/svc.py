@@ -18,6 +18,7 @@ class SVC(object):
         :param degree:kernel='poly'时生效
         :param gamma:kernel='rbf'时生效
         """
+        self.sample_weight = None
         self.b = None
         self.alpha = None
         self.E = None
@@ -100,7 +101,7 @@ class SVC(object):
             best_j = random.choice(seq)
         return best_j
 
-    def _meet_kkt(self, x_i, y_i, alpha_i):
+    def _meet_kkt(self, x_i, y_i, alpha_i, weight):
         """
         判断是否满足KKT条件
 
@@ -108,21 +109,31 @@ class SVC(object):
         :param b:
         :param x_i:
         :param y_i:
+        :param weight:样本weight
         :return:
         """
-        if alpha_i < self.C:
+        if alpha_i < self.C * weight:
             return y_i * self.f(x_i) >= 1 - self.tol
         else:
             return y_i * self.f(x_i) <= 1 + self.tol
 
-    def fit(self, X, y2, show_train_process=False):
+    def fit(self, X, y2, show_train_process=False, sample_weight=None):
         """
 
         :param X:
         :param y2:
         :param show_train_process: 显示训练过程
+        :param sample_weight:样本权重
         :return:
         """
+        n_sample = X.shape[0]
+        if sample_weight is None:
+            self.sample_weight = np.asarray([1.0] * n_sample)
+        else:
+            self.sample_weight = sample_weight
+        # check sample_weight
+        if len(self.sample_weight) != n_sample:
+            raise Exception('sample_weight size error:', len(self.sample_weight))
         y = copy.deepcopy(y2)
         y[y == 0] = -1
         # 初始化参数
@@ -135,7 +146,7 @@ class SVC(object):
                 alpha_i_old = self.alpha[i]
                 E_i_old = self.E[i]
                 # 外层循环：选择违反KKT条件的点i
-                if not self._meet_kkt(x_i, y_i, alpha_i_old):
+                if not self._meet_kkt(x_i, y_i, alpha_i_old, self.sample_weight[i]):
                     if_all_match_kkt = False
                     # 内层循环，选择使|Ei-Ej|最大的点j
                     best_j = self._select_j(i)
@@ -155,11 +166,11 @@ class SVC(object):
                     alpha_j_unc = alpha_j_old + y_j * (E_i_old - E_j_old) / eta
                     # 2.裁剪并得到new alpha_2
                     if y_i == y_j:
-                        L = max(0., alpha_i_old + alpha_j_old - self.C)
-                        H = min(self.C, alpha_i_old + alpha_j_old)
+                        L = max(0., alpha_i_old + alpha_j_old - self.C*self.sample_weight[best_j])
+                        H = min(self.C*self.sample_weight[best_j], alpha_i_old + alpha_j_old)
                     else:
                         L = max(0, alpha_j_old - alpha_i_old)
-                        H = min(self.C, self.C + alpha_j_old - alpha_i_old)
+                        H = min(self.C*self.sample_weight[best_j], self.C*self.sample_weight[best_j] + alpha_j_old - alpha_i_old)
 
                     if alpha_j_unc < L:
                         alpha_j_new = L
@@ -179,9 +190,9 @@ class SVC(object):
                     # 6.更新b
                     b_i_new = y_i - self.f(x_i) + self.b
                     b_j_new = y_j - self.f(x_j) + self.b
-                    if self.C > alpha_i_new > 0:
+                    if self.C*self.sample_weight[i] > alpha_i_new > 0:
                         self.b = b_i_new
-                    elif self.C > alpha_j_new > 0:
+                    elif self.C*self.sample_weight[best_j] > alpha_j_new > 0:
                         self.b = b_j_new
                     else:
                         self.b = (b_i_new + b_j_new) / 2.0
@@ -209,14 +220,6 @@ class SVC(object):
         if show_train_process is True:
             utils.plot_decision_function(X, y2, self, self.support_vectors)
             utils.plt.show()
-
-    def get_params(self):
-        """
-        输出原始的系数
-        :return: w
-        """
-
-        return self.w, self.b
 
     def predict_proba(self, x):
         """

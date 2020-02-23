@@ -12,6 +12,7 @@ class Perceptron(object):
         self.epochs = epochs
         self.eta = eta
         self.mode = mode
+        self.sample_weight = None
 
     def init_params(self, n_features):
         """
@@ -46,19 +47,28 @@ class Perceptron(object):
                 y_i = y[index]
                 # 更新错分点的参数，（注意需要有等号，因为初始化的alpha全为0）
                 if (x_i.dot(x.T.dot(self.alpha * y)) * y_i)[0] <= 0:
-                    self.alpha[index] += self.eta
+                    self.alpha[index] += self.eta * self.sample_weight[index]
                     error_sum += 1
             if error_sum == 0:
                 break
         # 更新回w
         self.w = x.T.dot(self.alpha * y)
 
-    def fit(self, x, y):
+    def fit(self, x, y, sample_weight=None):
         """
         :param x: ndarray格式数据: m x n
         :param y: ndarray格式数据: m x 1
+        :param sample_weight: mx1,样本权重
         :return:
         """
+        n_sample = x.shape[0]
+        if sample_weight is None:
+            self.sample_weight = np.asarray([1.0] * n_sample)
+        else:
+            self.sample_weight = sample_weight
+        # check sample_weight
+        if len(self.sample_weight) != n_sample:
+            raise Exception('sample_weight size error:', len(self.sample_weight))
         # 设置学习率
         if self.eta is None:
             self.eta = max(1e-2, 1.0 / np.sqrt(x.shape[0]))
@@ -82,6 +92,8 @@ class Perceptron(object):
                 # 更新错分点的参数
                 if (x_i.dot(self.w) * y_i)[0] < 0:
                     dw = (-x_i * y_i).reshape(-1, 1)
+                    # 考虑sample_weight
+                    dw = dw * self.sample_weight[index]
                     self.w = self.w - self.eta * dw
                     error_sum += 1
             if error_sum == 0:

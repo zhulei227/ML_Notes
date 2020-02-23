@@ -24,3 +24,4 @@
 
 [07_03_svm_核函数与非线性支持向量机](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/07_03_svm_%E6%A0%B8%E5%87%BD%E6%95%B0%E4%B8%8E%E9%9D%9E%E7%BA%BF%E6%80%A7%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA.ipynb)
 
+[08_代价敏感学习_添加样本权重支持](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/08_代价敏感学习_添加样本权重支持.ipynb)

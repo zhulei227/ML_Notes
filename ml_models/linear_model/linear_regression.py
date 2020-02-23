@@ -14,6 +14,7 @@ class LinearRegression(object):
         :param solver:
         :param if_standard:
         """
+        self.sample_weight = None
         self.w = None
         self.fit_intercept = fit_intercept
         self.solver = solver
@@ -76,9 +77,19 @@ class LinearRegression(object):
                     dw_reg += 2 * self.l2_ratio * self.w[:-1] / self.batch_size
                 dw_reg = np.concatenate([dw_reg, np.asarray([[0]])], axis=0)
                 dw += dw_reg
+                # 考虑sample_weight
+                dw = dw * np.mean(self.sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
                 self.w = self.w - self.eta * dw
 
-    def fit(self, x, y):
+    def fit(self, x, y, sample_weight=None):
+        n_sample = x.shape[0]
+        if sample_weight is None:
+            self.sample_weight = np.asarray([1.0] * n_sample)
+        else:
+            self.sample_weight = sample_weight
+        # check sample_weight
+        if len(self.sample_weight) != n_sample:
+            raise Exception('sample_weight size error:', len(self.sample_weight))
         # 是否归一化feature
         if self.if_standard:
             self.feature_mean = np.mean(x, axis=0)

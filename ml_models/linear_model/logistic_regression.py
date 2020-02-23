@@ -11,6 +11,7 @@ class LogisticRegression(object):
     def __init__(self, fit_intercept=True, solver='sgd', if_standard=True, l1_ratio=None, l2_ratio=None, epochs=10,
                  eta=None, batch_size=16):
 
+        self.sample_weight = None
         self.w = None
         self.fit_intercept = fit_intercept
         self.solver = solver
@@ -73,6 +74,8 @@ class LogisticRegression(object):
                 dw_reg = np.concatenate([dw_reg, np.asarray([[0]])], axis=0)
 
                 dw += dw_reg
+                # 考虑sample_weight
+                dw = dw * np.mean(self.sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
                 if self.solver == 'dfp':
                     if self.dfp is None:
                         self.dfp = optimization.DFP(x0=self.w, g0=dw)
@@ -98,12 +101,20 @@ class LogisticRegression(object):
                     1 - utils.sigmoid(x.dot(self.w)))))
             self.losses.append(cost)
 
-    def fit(self, x, y):
+    def fit(self, x, y, sample_weight=None):
         """
         :param x: ndarray格式数据: m x n
         :param y: ndarray格式数据: m x 1
         :return:
         """
+        n_sample = x.shape[0]
+        if sample_weight is None:
+            self.sample_weight = np.asarray([1.0] * n_sample)
+        else:
+            self.sample_weight = sample_weight
+        # check sample_weight
+        if len(self.sample_weight) != n_sample:
+            raise Exception('sample_weight size error:', len(self.sample_weight))
         y = y.reshape(x.shape[0], 1)
         # 是否归一化feature
         if self.if_standard:
