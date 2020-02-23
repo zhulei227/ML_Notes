@@ -1,6 +1,6 @@
 ### 机器学习笔记
 
-主要基于李航的《统计学习方法》第二版，对其中每个算法进行公式推导，相关问题分析，以及进行numpy实现，同时接口名称的设计考虑到工程应用上的简洁易用，后续内容持续更新，争取1~2周一更，嗯，加油~~~，目前实现的内容包括：  
+主要基于李航的《统计学习方法》第二版，对其中每个算法进行公式推导，相关问题分析，以及进行numpy实现，同时接口名称的设计考虑到工程应用上的简洁易用，后续内容持续更新（1~2周一更），目前实现的内容包括：  
 
 
 
@@ -14,7 +14,7 @@
 
 [04_线性模型_感知机](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/04_%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B_%E6%84%9F%E7%9F%A5%E6%9C%BA.ipynb)
 
-[05_线性模型_最大熵模型](https://github.com/zhulei227/ML_Notes/blob/master/notebooks/05_%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B_%E6%9C%80%E5%A4%A7%E7%86%B5%E6%A8%A1%E5%9E%8B.ipynb)
+[05_线性模型_最大熵模型](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/05_%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B_%E6%9C%80%E5%A4%A7%E7%86%B5%E6%A8%A1%E5%9E%8B.ipynb)
 
 [06_优化_拟牛顿法实现(DFP,BFGS)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/06_%E4%BC%98%E5%8C%96_%E6%8B%9F%E7%89%9B%E9%A1%BF%E6%B3%95%E5%AE%9E%E7%8E%B0(DFP%2CBFGS).ipynb)
 
