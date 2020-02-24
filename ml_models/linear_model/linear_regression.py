@@ -67,18 +67,21 @@ class LinearRegression(object):
                 batch_x = batch_x_y[:, :-1]
                 batch_y = batch_x_y[:, -1:]
 
-                dw = -2 * batch_x.T.dot(batch_y - batch_x.dot(self.w)) / self.batch_size
+                # 考虑sample_weight
+                sample_weight_diag = np.diag(self.sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
+                sample_weight_mean = np.mean(self.sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
+
+                dw = -2 * batch_x.T.dot(sample_weight_diag).dot(batch_y - batch_x.dot(self.w)) / self.batch_size
 
                 # 添加l1和l2的部分
                 dw_reg = np.zeros(shape=(x.shape[1] - 1, 1))
                 if self.l1_ratio is not None:
-                    dw_reg += self.l1_ratio * self.sign_func(self.w[:-1]) / self.batch_size
+                    dw_reg += sample_weight_mean * self.l1_ratio * self.sign_func(self.w[:-1]) / self.batch_size
                 if self.l2_ratio is not None:
-                    dw_reg += 2 * self.l2_ratio * self.w[:-1] / self.batch_size
+                    dw_reg += 2 * sample_weight_mean * self.l2_ratio * self.w[:-1] / self.batch_size
                 dw_reg = np.concatenate([dw_reg, np.asarray([[0]])], axis=0)
                 dw += dw_reg
-                # 考虑sample_weight
-                dw = dw * np.mean(self.sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
+
                 self.w = self.w - self.eta * dw
 
     def fit(self, x, y, sample_weight=None):

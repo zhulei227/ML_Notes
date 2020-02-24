@@ -62,20 +62,24 @@ class LogisticRegression(object):
                 batch_x = batch_x_y[:, :-1]
                 batch_y = batch_x_y[:, -1:]
 
-                dw = -1 * (batch_y - utils.sigmoid(batch_x.dot(self.w))).T.dot(batch_x) / self.batch_size
+                # 考虑sample_weight
+                sample_weight_diag = np.diag(self.sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
+                sample_weight_mean = np.mean(self.sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
+
+                dw = -1 * (batch_y - utils.sigmoid(batch_x.dot(self.w))).T.dot(sample_weight_diag).dot(
+                    batch_x) / self.batch_size
                 dw = dw.T
 
                 # 添加l1和l2的部分
                 dw_reg = np.zeros(shape=(x.shape[1] - 1, 1))
                 if self.l1_ratio is not None:
-                    dw_reg += self.l1_ratio * self.sign_func(self.w[:-1]) / self.batch_size
+                    dw_reg += sample_weight_mean * self.l1_ratio * self.sign_func(self.w[:-1]) / self.batch_size
                 if self.l2_ratio is not None:
-                    dw_reg += 2 * self.l2_ratio * self.w[:-1] / self.batch_size
+                    dw_reg += 2 * sample_weight_mean * self.l2_ratio * self.w[:-1] / self.batch_size
                 dw_reg = np.concatenate([dw_reg, np.asarray([[0]])], axis=0)
 
                 dw += dw_reg
-                # 考虑sample_weight
-                dw = dw * np.mean(self.sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
+                
                 if self.solver == 'dfp':
                     if self.dfp is None:
                         self.dfp = optimization.DFP(x0=self.w, g0=dw)
