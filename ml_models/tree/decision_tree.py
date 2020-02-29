@@ -173,6 +173,11 @@ class DecisionTreeClassifier(object):
 
         # 再尝试对当前结点剪枝
         if current_node.children_nodes is not None and len(current_node.children_nodes) != 0:
+            # 避免跳层剪枝
+            for child_node in current_node.children_nodes.values():
+                # 当前剪枝的层必须是叶子结点的层
+                if child_node.children_nodes is not None and len(child_node.children_nodes) > 0:
+                    return
             # 计算剪枝的前的损失值
             pre_prune_value = alpha * len(current_node.children_nodes)
             for child_node in current_node.children_nodes.values():
