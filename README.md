@@ -1,6 +1,6 @@
 ### 机器学习笔记
 
-主要基于李航的《统计学习方法》第二版，对其中每个算法进行公式推导，相关问题分析，以及进行numpy实现，同时接口名称的设计考虑到工程应用上的简洁易用，后续内容持续更新（1~2周一更），目前实现的内容包括：  
+主要基于李航老师的《统计学习方法》第二版（但不限于书中的内容），对其中每个算法进行公式推导，相关问题分析，以及进行numpy实现，同时接口名称的设计考虑到工程应用上的简洁易用，后续内容持续更新（1~2周一更），目前实现的内容包括：  
 
 
 
@@ -25,4 +25,6 @@
 [07_03_svm_核函数与非线性支持向量机](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/07_03_svm_%E6%A0%B8%E5%87%BD%E6%95%B0%E4%B8%8E%E9%9D%9E%E7%BA%BF%E6%80%A7%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA.ipynb)
 
 [08_代价敏感学习_添加sample_weight支持](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/08_%E4%BB%A3%E4%BB%B7%E6%95%8F%E6%84%9F%E5%AD%A6%E4%B9%A0_%E6%B7%BB%E5%8A%A0sample_weight%E6%94%AF%E6%8C%81.ipynb)
+
+[09_决策树_ID3与C4.5](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/09_%E5%86%B3%E7%AD%96%E6%A0%91_ID3%E4%B8%8EC4.5.ipynb)
 
