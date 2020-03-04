@@ -18,7 +18,6 @@ class SVC(object):
         :param degree:kernel='poly'时生效
         :param gamma:kernel='rbf'时生效
         """
-        self.sample_weight = None
         self.b = None
         self.alpha = None
         self.E = None
@@ -128,12 +127,10 @@ class SVC(object):
         """
         n_sample = X.shape[0]
         if sample_weight is None:
-            self.sample_weight = np.asarray([1.0] * n_sample)
-        else:
-            self.sample_weight = sample_weight
+            sample_weight = np.asarray([1.0] * n_sample)
         # check sample_weight
-        if len(self.sample_weight) != n_sample:
-            raise Exception('sample_weight size error:', len(self.sample_weight))
+        if len(sample_weight) != n_sample:
+            raise Exception('sample_weight size error:', len(sample_weight))
         y = copy.deepcopy(y2)
         y[y == 0] = -1
         # 初始化参数
@@ -146,7 +143,7 @@ class SVC(object):
                 alpha_i_old = self.alpha[i]
                 E_i_old = self.E[i]
                 # 外层循环：选择违反KKT条件的点i
-                if not self._meet_kkt(x_i, y_i, alpha_i_old, self.sample_weight[i]):
+                if not self._meet_kkt(x_i, y_i, alpha_i_old, sample_weight[i]):
                     if_all_match_kkt = False
                     # 内层循环，选择使|Ei-Ej|最大的点j
                     best_j = self._select_j(i)
@@ -166,11 +163,12 @@ class SVC(object):
                     alpha_j_unc = alpha_j_old + y_j * (E_i_old - E_j_old) / eta
                     # 2.裁剪并得到new alpha_2
                     if y_i == y_j:
-                        L = max(0., alpha_i_old + alpha_j_old - self.C*self.sample_weight[best_j])
-                        H = min(self.C*self.sample_weight[best_j], alpha_i_old + alpha_j_old)
+                        L = max(0., alpha_i_old + alpha_j_old - self.C * sample_weight[best_j])
+                        H = min(self.C * sample_weight[best_j], alpha_i_old + alpha_j_old)
                     else:
                         L = max(0, alpha_j_old - alpha_i_old)
-                        H = min(self.C*self.sample_weight[best_j], self.C*self.sample_weight[best_j] + alpha_j_old - alpha_i_old)
+                        H = min(self.C * sample_weight[best_j],
+                                self.C * sample_weight[best_j] + alpha_j_old - alpha_i_old)
 
                     if alpha_j_unc < L:
                         alpha_j_new = L
@@ -190,9 +188,9 @@ class SVC(object):
                     # 6.更新b
                     b_i_new = y_i - self.f(x_i) + self.b
                     b_j_new = y_j - self.f(x_j) + self.b
-                    if self.C*self.sample_weight[i] > alpha_i_new > 0:
+                    if self.C * sample_weight[i] > alpha_i_new > 0:
                         self.b = b_i_new
-                    elif self.C*self.sample_weight[best_j] > alpha_j_new > 0:
+                    elif self.C * sample_weight[best_j] > alpha_j_new > 0:
                         self.b = b_j_new
                     else:
                         self.b = (b_i_new + b_j_new) / 2.0

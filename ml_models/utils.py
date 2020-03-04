@@ -124,6 +124,126 @@ def info_gain_rate(x, y, sample_weight=None):
     return 1.0 * muti_info(x, y, sample_weight) / (1e-12 + entropy(x, sample_weight))
 
 
+def gini(x, sample_weight=None):
+    """
+    计算基尼系数 Gini(D)
+    :param x:
+    :param sample_weight:
+    :return:
+    """
+    x_num = len(x)
+    # 如果sample_weight为None设均设置一样
+    if sample_weight is None:
+        sample_weight = np.asarray([1.0] * x_num)
+    x_counter = {}
+    weight_counter = {}
+    # 统计各x取值出现的次数以及其对应的sample_weight列表
+    for index in range(0, x_num):
+        x_value = x[index]
+        if x_counter.get(x_value) is None:
+            x_counter[x_value] = 0
+            weight_counter[x_value] = []
+        x_counter[x_value] += 1
+        weight_counter[x_value].append(sample_weight[index])
+
+    # 计算gini系数
+    gini_value = 1.0
+    for key, value in x_counter.items():
+        p_i = 1.0 * value * np.mean(weight_counter.get(key)) / x_num
+        gini_value -= p_i * p_i
+    return gini_value
+
+
+def cond_gini(x, y, sample_weight=None):
+    """
+    计算条件gini系数:Gini(y,x)
+    """
+    x = np.asarray(x)
+    y = np.asarray(y)
+    # x中元素个数
+    x_num = len(x)
+    # 如果sample_weight为None设均设置一样
+    if sample_weight is None:
+        sample_weight = np.asarray([1.0] * x_num)
+    # 计算
+    gini_value = .0
+    for x_value in set(x):
+        x_index = np.where(x == x_value)
+        new_x = x[x_index]
+        new_y = y[x_index]
+        new_sample_weight = sample_weight[x_index]
+        p_i = 1.0 * len(new_x) / x_num
+        gini_value += p_i * gini(new_y, new_sample_weight)
+    return gini_value
+
+
+def gini_gain(x, y, sample_weight=None):
+    """
+    gini值的增益
+    """
+    x_num = len(x)
+    if sample_weight is None:
+        sample_weight = np.asarray([1.0] * x_num)
+    return gini(y, sample_weight) - cond_gini(x, y, sample_weight)
+
+
+def square_error(x, sample_weight=None):
+    """
+    平方误差
+    :param x:
+    :param sample_weight:
+    :return:
+    """
+    x = np.asarray(x)
+    x_mean = np.mean(x)
+    x_num = len(x)
+    if sample_weight is None:
+        sample_weight = np.asarray([1.0] * x_num)
+    error = 0.0
+    for index in range(0, x_num):
+        error += (x[index] - x_mean) * (x[index] - x_mean) * sample_weight[index]
+    return error
+
+
+def cond_square_error(x, y, sample_weight=None):
+    """
+    计算按x分组的y的误差值
+    :param x:
+    :param y:
+    :param sample_weight:
+    :return:
+    """
+    x = np.asarray(x)
+    y = np.asarray(y)
+    # x中元素个数
+    x_num = len(x)
+    # 如果sample_weight为None设均设置一样
+    if sample_weight is None:
+        sample_weight = np.asarray([1.0] * x_num)
+    # 计算
+    error = .0
+    for x_value in set(x):
+        x_index = np.where(x == x_value)
+        new_y = y[x_index]
+        new_sample_weight = sample_weight[x_index]
+        error += square_error(new_y, new_sample_weight)
+    return error
+
+
+def square_error_gain(x, y, sample_weight=None):
+    """
+    平方误差带来的增益值
+    :param x:
+    :param y:
+    :param sample_weight:
+    :return:
+    """
+    x_num = len(x)
+    if sample_weight is None:
+        sample_weight = np.asarray([1.0] * x_num)
+    return square_error(y, sample_weight) - cond_square_error(x, y, sample_weight)
+
+
 """
 绘制决策边界
 """

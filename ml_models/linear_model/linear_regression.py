@@ -14,7 +14,6 @@ class LinearRegression(object):
         :param solver:
         :param if_standard:
         """
-        self.sample_weight = None
         self.w = None
         self.fit_intercept = fit_intercept
         self.solver = solver
@@ -37,7 +36,7 @@ class LinearRegression(object):
         """
         self.w = np.random.random(size=(n_features, 1))
 
-    def _fit_closed_form_solution(self, x, y):
+    def _fit_closed_form_solution(self, x, y, sample_weight):
         """
         直接求闭式解
         :param x:
@@ -49,9 +48,9 @@ class LinearRegression(object):
         elif self.l1_ratio is None and self.l2_ratio is not None:
             self.w = np.linalg.inv(x.T.dot(x) + self.l2_ratio * np.eye(x.shape[1])).dot(x.T).dot(y)
         else:
-            self._fit_sgd(x, y)
+            self._fit_sgd(x, y, sample_weight)
 
-    def _fit_sgd(self, x, y):
+    def _fit_sgd(self, x, y, sample_weight):
         """
         随机梯度下降求解
         :param x:
@@ -68,8 +67,8 @@ class LinearRegression(object):
                 batch_y = batch_x_y[:, -1:]
 
                 # 考虑sample_weight
-                sample_weight_diag = np.diag(self.sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
-                sample_weight_mean = np.mean(self.sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
+                sample_weight_diag = np.diag(sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
+                sample_weight_mean = np.mean(sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
 
                 dw = -2 * batch_x.T.dot(sample_weight_diag).dot(batch_y - batch_x.dot(self.w)) / self.batch_size
 
@@ -87,12 +86,10 @@ class LinearRegression(object):
     def fit(self, x, y, sample_weight=None):
         n_sample = x.shape[0]
         if sample_weight is None:
-            self.sample_weight = np.asarray([1.0] * n_sample)
-        else:
-            self.sample_weight = sample_weight
+            sample_weight = np.asarray([1.0] * n_sample)
         # check sample_weight
-        if len(self.sample_weight) != n_sample:
-            raise Exception('sample_weight size error:', len(self.sample_weight))
+        if len(sample_weight) != n_sample:
+            raise Exception('sample_weight size error:', len(sample_weight))
         # 是否归一化feature
         if self.if_standard:
             self.feature_mean = np.mean(x, axis=0)
@@ -105,9 +102,9 @@ class LinearRegression(object):
         self.init_params(x.shape[1])
         # 训练模型
         if self.solver == 'closed_form':
-            self._fit_closed_form_solution(x, y)
+            self._fit_closed_form_solution(x, y, sample_weight)
         elif self.solver == 'sgd':
-            self._fit_sgd(x, y)
+            self._fit_sgd(x, y, sample_weight)
 
     def get_params(self):
         """

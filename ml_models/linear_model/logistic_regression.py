@@ -11,7 +11,6 @@ class LogisticRegression(object):
     def __init__(self, fit_intercept=True, solver='sgd', if_standard=True, l1_ratio=None, l2_ratio=None, epochs=10,
                  eta=None, batch_size=16):
 
-        self.sample_weight = None
         self.w = None
         self.fit_intercept = fit_intercept
         self.solver = solver
@@ -36,16 +35,7 @@ class LogisticRegression(object):
         """
         self.w = np.random.random(size=(n_features, 1))
 
-    def _fit_closed_form_solution(self, x, y):
-        """
-        直接求闭式解
-        :param x:
-        :param y:
-        :return:
-        """
-        self._fit_sgd(x, y)
-
-    def _fit_sgd(self, x, y):
+    def _fit_sgd(self, x, y, sample_weight):
         """
         随机梯度下降求解
         :param x:
@@ -63,8 +53,8 @@ class LogisticRegression(object):
                 batch_y = batch_x_y[:, -1:]
 
                 # 考虑sample_weight
-                sample_weight_diag = np.diag(self.sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
-                sample_weight_mean = np.mean(self.sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
+                sample_weight_diag = np.diag(sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
+                sample_weight_mean = np.mean(sample_weight[self.batch_size * index:self.batch_size * (index + 1)])
 
                 dw = -1 * (batch_y - utils.sigmoid(batch_x.dot(self.w))).T.dot(sample_weight_diag).dot(
                     batch_x) / self.batch_size
@@ -79,7 +69,7 @@ class LogisticRegression(object):
                 dw_reg = np.concatenate([dw_reg, np.asarray([[0]])], axis=0)
 
                 dw += dw_reg
-                
+
                 if self.solver == 'dfp':
                     if self.dfp is None:
                         self.dfp = optimization.DFP(x0=self.w, g0=dw)
@@ -113,12 +103,10 @@ class LogisticRegression(object):
         """
         n_sample = x.shape[0]
         if sample_weight is None:
-            self.sample_weight = np.asarray([1.0] * n_sample)
-        else:
-            self.sample_weight = sample_weight
+            sample_weight = np.asarray([1.0] * n_sample)
         # check sample_weight
-        if len(self.sample_weight) != n_sample:
-            raise Exception('sample_weight size error:', len(self.sample_weight))
+        if len(sample_weight) != n_sample:
+            raise Exception('sample_weight size error:', len(sample_weight))
         y = y.reshape(x.shape[0], 1)
         # 是否归一化feature
         if self.if_standard:
@@ -134,16 +122,14 @@ class LogisticRegression(object):
         if self.eta is None:
             self.eta = self.batch_size / np.sqrt(x.shape[0])
 
-        if self.solver == 'closed_form':
-            self._fit_closed_form_solution(x, y)
         elif self.solver == 'sgd':
-            self._fit_sgd(x, y)
+            self._fit_sgd(x, y, sample_weight)
         elif self.solver == 'dfp':
             self.dfp = None
-            self._fit_sgd(x, y)
+            self._fit_sgd(x, y, sample_weight)
         elif self.solver == 'bfgs':
             self.bfgs = None
-            self._fit_sgd(x, y)
+            self._fit_sgd(x, y, sample_weight)
 
     def get_params(self):
         """

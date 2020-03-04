@@ -53,7 +53,6 @@ class SimpleFeatureFunction(object):
 
 class MaxEnt(object):
     def __init__(self, feature_func, epochs=5, eta=0.01):
-        self.sample_weight = None
         self.feature_func = feature_func
         self.epochs = epochs
         self.eta = eta
@@ -131,12 +130,10 @@ class MaxEnt(object):
     def fit(self, X, y, sample_weight=None):
         n_sample = X.shape[0]
         if sample_weight is None:
-            self.sample_weight = np.asarray([1.0] * n_sample)
-        else:
-            self.sample_weight = sample_weight
+            sample_weight = np.asarray([1.0] * n_sample)
         # check sample_weight
-        if len(self.sample_weight) != n_sample:
-            raise Exception('sample_weight size error:', len(self.sample_weight))
+        if len(sample_weight) != n_sample:
+            raise Exception('sample_weight size error:', len(sample_weight))
         self.eta = max(1.0 / np.sqrt(X.shape[0]), self.eta)
         self.init_params(X, y)
         x_y = np.c_[X, y]
@@ -167,7 +164,7 @@ class MaxEnt(object):
                                                                 self._sum_exp_w_on_y(x_point, y_point)) + 1e-7) / (
                                                             1e-7 + sum_w)
                 # 考虑sample_weight
-                dw = dw * self.sample_weight[index]
+                dw = dw * sample_weight[index]
                 # 更新
                 self.w += self.eta * dw
                 # 打印训练进度

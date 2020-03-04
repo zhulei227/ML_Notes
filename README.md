@@ -26,5 +26,7 @@
 
 [08_代价敏感学习_添加sample_weight支持](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/08_%E4%BB%A3%E4%BB%B7%E6%95%8F%E6%84%9F%E5%AD%A6%E4%B9%A0_%E6%B7%BB%E5%8A%A0sample_weight%E6%94%AF%E6%8C%81.ipynb)
 
-[09_决策树_ID3与C4.5](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/09_%E5%86%B3%E7%AD%96%E6%A0%91_ID3%E4%B8%8EC4.5.ipynb)
+[09_01_决策树_ID3与C4.5](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/09_01_%E5%86%B3%E7%AD%96%E6%A0%91_ID3%E4%B8%8EC4.5.ipynb)
+
+[09_02_决策树_CART](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/09_02_%E5%86%B3%E7%AD%96%E6%A0%91_CART.ipynb)
 

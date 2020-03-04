@@ -1,46 +1,51 @@
 """
-ID3和C4.5决策树分类器的实现
+CART分类树的实现
 """
 import numpy as np
 from .. import utils
 from ..wrapper_models import DataBinWrapper
 
 
-class DecisionTreeClassifier(object):
+class CARTClassifier(object):
     class Node(object):
         """
         树节点，用于存储节点信息以及关联子节点
         """
 
-        def __init__(self, feature_index: int = None, target_distribute: dict = None, weight_distribute: dict = None,
-                     children_nodes: dict = None, num_sample: int = None):
+        def __init__(self, feature_index: int = None, feature_value=None, target_distribute: dict = None,
+                     weight_distribute: dict = None,
+                     left_child_node=None, right_child_node=None, num_sample: int = None):
             """
             :param feature_index: 特征id
+            :param feature_value: 特征取值
             :param target_distribute: 目标分布
             :param weight_distribute:权重分布
-            :param children_nodes: 孩子节点
+            :param left_child_node: 左孩子结点
+            :param right_child_node: 右孩子结点
             :param num_sample:样本量
             """
             self.feature_index = feature_index
+            self.feature_value = feature_value
             self.target_distribute = target_distribute
             self.weight_distribute = weight_distribute
-            self.children_nodes = children_nodes
+            self.left_child_node = left_child_node
+            self.right_child_node = right_child_node
             self.num_sample = num_sample
 
-    def __init__(self, criterion='c4.5', max_depth=None, min_samples_split=2, min_samples_leaf=1,
+    def __init__(self, criterion='gini', max_depth=None, min_samples_split=2, min_samples_leaf=1,
                  min_impurity_decrease=0, max_bins=10):
         """
-        :param criterion:划分标准，包括id3,c4.5，默认为c4.5
+        :param criterion:划分标准，默认为gini,另外entropy表示用信息增益比
         :param max_depth:树的最大深度
         :param min_samples_split:当对一个内部结点划分时，要求该结点上的最小样本数，默认为2
         :param min_samples_leaf:设置叶子结点上的最小样本数，默认为1
         :param min_impurity_decrease:打算划分一个内部结点时，只有当划分后不纯度(可以用criterion参数指定的度量来描述)减少值不小于该参数指定的值，才会对该结点进行划分，默认值为0
         """
         self.criterion = criterion
-        if criterion == 'c4.5':
-            self.criterion_func = utils.info_gain_rate
+        if criterion == 'gini':
+            self.criterion_func = utils.gini_gain
         else:
-            self.criterion_func = utils.muti_info
+            self.criterion_func = utils.info_gain_rate
         self.max_depth = max_depth
         self.min_samples_split = min_samples_split
         self.min_samples_leaf = min_samples_leaf
@@ -84,14 +89,17 @@ class DecisionTreeClassifier(object):
         if self.max_depth is not None and current_depth > self.max_depth:
             return
 
-        # 寻找最佳的特征
+        # 寻找最佳的特征以及取值
         best_index = None
+        best_index_value = None
         best_criterion_value = 0
         for index in range(0, cols):
-            criterion_value = self.criterion_func(x[:, index], y)
-            if criterion_value > best_criterion_value:
-                best_criterion_value = criterion_value
-                best_index = index
+            for index_value in set(x[:, index]):
+                criterion_value = self.criterion_func((x[:, index] == index_value).astype(int), y, sample_weight)
+                if criterion_value > best_criterion_value:
+                    best_criterion_value = criterion_value
+                    best_index = index
+                    best_index_value = index_value
 
         # 如果criterion_value减少不够则停止
         if best_index is None:
@@ -100,18 +108,25 @@ class DecisionTreeClassifier(object):
             return
         # 切分
         current_node.feature_index = best_index
-        children_nodes = {}
-        current_node.children_nodes = children_nodes
+        current_node.feature_value = best_index_value
         selected_x = x[:, best_index]
-        for item in set(selected_x):
-            selected_index = np.where(selected_x == item)
-            # 如果切分后的点太少，以至于都不能做叶子节点，则停止分割
-            if len(selected_index[0]) < self.min_samples_leaf:
-                continue
-            child_node = self.Node()
-            children_nodes[item] = child_node
-            self._build_tree(current_depth + 1, child_node, x[selected_index], y[selected_index],
-                             sample_weight[selected_index])
+
+        # 创建左孩子结点
+        left_selected_index = np.where(selected_x == best_index_value)
+        # 如果切分后的点太少，以至于都不能做叶子节点，则停止分割
+        if len(left_selected_index[0]) >= self.min_samples_leaf:
+            left_child_node = self.Node()
+            current_node.left_child_node = left_child_node
+            self._build_tree(current_depth + 1, left_child_node, x[left_selected_index], y[left_selected_index],
+                             sample_weight[left_selected_index])
+        # 创建右孩子结点
+        right_selected_index = np.where(selected_x != best_index_value)
+        # 如果切分后的点太少，以至于都不能做叶子节点，则停止分割
+        if len(right_selected_index[0]) >= self.min_samples_leaf:
+            right_child_node = self.Node()
+            current_node.right_child_node = right_child_node
+            self._build_tree(current_depth + 1, right_child_node, x[right_selected_index], y[right_selected_index],
+                             sample_weight[right_selected_index])
 
     def fit(self, x, y, sample_weight=None):
         # check sample_weight
@@ -133,9 +148,11 @@ class DecisionTreeClassifier(object):
 
     # 检索叶子节点的结果
     def _search_node(self, current_node: Node, x, class_num):
-        if current_node.feature_index is None or current_node.children_nodes is None or len(
-                current_node.children_nodes) == 0 or current_node.children_nodes.get(
-            x[current_node.feature_index]) is None:
+        if current_node.left_child_node is not None and x[current_node.feature_index] == current_node.feature_value:
+            return self._search_node(current_node.left_child_node, x, class_num)
+        elif current_node.right_child_node is not None and x[current_node.feature_index] != current_node.feature_value:
+            return self._search_node(current_node.right_child_node, x, class_num)
+        else:
             result = []
             total_value = 0.0
             for index in range(0, class_num):
@@ -146,8 +163,6 @@ class DecisionTreeClassifier(object):
             for index in range(0, class_num):
                 result[index] = result[index] / total_value
             return result
-        else:
-            return self._search_node(current_node.children_nodes.get(x[current_node.feature_index]), x, class_num)
 
     def predict_proba(self, x):
         # 计算结果概率分布
@@ -164,20 +179,20 @@ class DecisionTreeClassifier(object):
 
     def _prune_node(self, current_node: Node, alpha):
         # 如果有子结点,先对子结点部分剪枝
-        if current_node.children_nodes is not None and len(current_node.children_nodes) != 0:
-            for child_node in current_node.children_nodes.values():
-                self._prune_node(child_node, alpha)
-
+        if current_node.left_child_node is not None:
+            self._prune_node(current_node.left_child_node, alpha)
+        if current_node.right_child_node is not None:
+            self._prune_node(current_node.right_child_node, alpha)
         # 再尝试对当前结点剪枝
-        if current_node.children_nodes is not None and len(current_node.children_nodes) != 0:
+        if current_node.left_child_node is not None or current_node.right_child_node is not None:
             # 避免跳层剪枝
-            for child_node in current_node.children_nodes.values():
+            for child_node in [current_node.left_child_node, current_node.right_child_node]:
                 # 当前剪枝的层必须是叶子结点的层
-                if child_node.children_nodes is not None and len(child_node.children_nodes) > 0:
+                if child_node.left_child_node is not None or child_node.right_child_node is not None:
                     return
             # 计算剪枝的前的损失值
-            pre_prune_value = alpha * len(current_node.children_nodes)
-            for child_node in current_node.children_nodes.values():
+            pre_prune_value = alpha * 2
+            for child_node in [current_node.left_child_node, current_node.right_child_node]:
                 for key, value in child_node.target_distribute.items():
                     pre_prune_value += -1 * child_node.num_sample * value * np.log(
                         value) * child_node.weight_distribute.get(key, 1.0)
@@ -189,8 +204,10 @@ class DecisionTreeClassifier(object):
 
             if after_prune_value <= pre_prune_value:
                 # 剪枝操作
-                current_node.children_nodes = None
+                current_node.left_child_node = None
+                current_node.right_child_node = None
                 current_node.feature_index = None
+                current_node.feature_value = None
 
     def prune(self, alpha=0.01):
         """
