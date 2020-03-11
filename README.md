@@ -30,3 +30,9 @@
 
 [09_02_决策树_CART](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/09_02_%E5%86%B3%E7%AD%96%E6%A0%91_CART.ipynb)
 
+[10_01_集成学习_简介](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_01_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_%E7%AE%80%E4%BB%8B.ipynb)
+
+[10_02_集成学习_boosting_adaboost](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_02_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_adaboost.ipynb)
+
+
+
