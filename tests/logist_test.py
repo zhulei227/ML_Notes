@@ -12,9 +12,7 @@ data, target = make_classification(n_samples=200, n_features=2, n_classes=2, n_i
 
 from ml_models.linear_model import LogisticRegression
 
-target = target.reshape(200, 1)
-
-lr = LogisticRegression(solver='bfgs')
+lr = LogisticRegression()
 lr.fit(data, target)
 
 # 计算F1

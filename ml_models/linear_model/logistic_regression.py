@@ -95,10 +95,10 @@ class LogisticRegression(object):
                     1 - utils.sigmoid(x.dot(self.w)))))
             self.losses.append(cost)
 
-    def fit(self, x, y, sample_weight=None):
+    def fit(self, x, y2, sample_weight=None):
         """
         :param x: ndarray格式数据: m x n
-        :param y: ndarray格式数据: m x 1
+        :param y2: ndarray格式数据: m
         :return:
         """
         n_sample = x.shape[0]
@@ -107,7 +107,7 @@ class LogisticRegression(object):
         # check sample_weight
         if len(sample_weight) != n_sample:
             raise Exception('sample_weight size error:', len(sample_weight))
-        y = y.reshape(x.shape[0], 1)
+        y = y2.reshape(x.shape[0], 1)
         # 是否归一化feature
         if self.if_standard:
             self.feature_mean = np.mean(x, axis=0)
@@ -122,7 +122,7 @@ class LogisticRegression(object):
         if self.eta is None:
             self.eta = self.batch_size / np.sqrt(x.shape[0])
 
-        elif self.solver == 'sgd':
+        if self.solver == 'sgd':
             self._fit_sgd(x, y, sample_weight)
         elif self.solver == 'dfp':
             self.dfp = None
@@ -151,13 +151,13 @@ class LogisticRegression(object):
         """
         预测为y=1的概率
         :param x:ndarray格式数据: m x n
-        :return: m x 1
+        :return: m x 2
         """
         if self.if_standard:
             x = (x - self.feature_mean) / self.feature_std
         if self.fit_intercept:
             x = np.c_[x, np.ones(x.shape[0])]
-        return utils.sigmoid(x.dot(self.w))
+        return np.c_[1.0 - utils.sigmoid(x.dot(self.w)), utils.sigmoid(x.dot(self.w))]
 
     def predict(self, x):
         """
@@ -165,8 +165,7 @@ class LogisticRegression(object):
         :param x:
         :return:
         """
-        proba = self.predict_proba(x)
-        return (proba > 0.5).astype(int)
+        return np.argmax(self.predict_proba(x), axis=1)
 
     def plot_decision_boundary(self, x, y):
         """

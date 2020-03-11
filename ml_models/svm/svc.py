@@ -222,14 +222,13 @@ class SVC(object):
     def predict_proba(self, x):
         """
         :param x:ndarray格式数据: m x n
-        :return: m x 1
+        :return: m x 2
         """
-        return utils.sigmoid(self.f(x))
+        return np.c_[1.0 - utils.sigmoid(self.f(x)), utils.sigmoid(self.f(x))]
 
     def predict(self, x):
         """
         :param x:ndarray格式数据: m x n
         :return: m x 1
         """
-        proba = self.predict_proba(x)
-        return (proba >= 0.5).astype(int)
+        return np.argmax(self.predict_proba(x), axis=1)

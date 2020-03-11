@@ -14,7 +14,7 @@ data, target = datasets.make_moons(noise=0.01)
 
 from ml_models.svm import SVC
 
-svm = SVC(C=3.0, kernel='poly', degree=3, gamma=0.1, epochs=10, tol=0.2)
+svm = SVC(C=3.0, kernel='rbf',gamma=0.1, epochs=10, tol=0.2)
 # svm = SVC(tol=0.01)
 svm.fit(data, target, show_train_process=True)
 

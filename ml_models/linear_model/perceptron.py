@@ -111,9 +111,7 @@ class Perceptron(object):
         :param x:ndarray格式数据: m x n
         :return: m x 1
         """
-        n_samples = x.shape[0]
-        x = np.c_[x, np.ones(shape=(n_samples,))]
-        return (x.dot(self.w) > 0).astype(int)
+        return np.argmax(self.predict_proba(x), axis=1)
 
     def predict_proba(self, x):
         """
@@ -122,7 +120,7 @@ class Perceptron(object):
         """
         n_samples = x.shape[0]
         x = np.c_[x, np.ones(shape=(n_samples,))]
-        return utils.sigmoid(x.dot(self.w))
+        return np.c_[1.0 - utils.sigmoid(x.dot(self.w)), utils.sigmoid(x.dot(self.w))]
 
     def plot_decision_boundary(self, x, y):
         """
