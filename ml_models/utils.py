@@ -195,10 +195,11 @@ def square_error(x, sample_weight=None):
     :return:
     """
     x = np.asarray(x)
-    x_mean = np.mean(x)
+    # x_mean = np.mean(x)
     x_num = len(x)
     if sample_weight is None:
         sample_weight = np.asarray([1.0] * x_num)
+    x_mean = np.dot(x, sample_weight / np.sum(sample_weight))
     error = 0.0
     for index in range(0, x_num):
         error += (x[index] - x_mean) * (x[index] - x_mean) * sample_weight[index]

@@ -131,7 +131,7 @@ class LinearRegression(object):
             x = (x - self.feature_mean) / self.feature_std
         if self.fit_intercept:
             x = np.c_[x, np.ones(shape=x.shape[0])]
-        return x.dot(self.w)
+        return x.dot(self.w).reshape(x.shape[0])
 
     def plot_fit_boundary(self, x, y):
         """

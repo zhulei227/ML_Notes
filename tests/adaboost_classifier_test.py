@@ -11,13 +11,13 @@ from ml_models.tree import CARTClassifier
 from ml_models.svm import SVC
 
 
-data, target = make_classification(n_samples=500, n_features=2, n_classes=2, n_informative=1, n_redundant=0,
-                                   n_repeated=0, n_clusters_per_class=1, class_sep=1.0)
+data, target = make_classification(n_samples=100, n_features=2, n_classes=2, n_informative=1, n_redundant=0,
+                                   n_repeated=0, n_clusters_per_class=1, class_sep=0.5)
 X_train, X_test, y_train, y_test = model_selection.train_test_split(data, target, test_size=0.1)
 
 from ml_models.ensemble import AdaBoostClassifier
 
-classifier = AdaBoostClassifier(base_estimator=LogisticRegression(),n_estimators=100,
+classifier = AdaBoostClassifier(base_estimator=CARTClassifier(),n_estimators=10,
                                 learning_rate=0.5)
 classifier.fit(X_train, y_train)
 # # 计算F1

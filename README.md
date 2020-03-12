@@ -32,7 +32,9 @@
 
 [10_01_集成学习_简介](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_01_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_%E7%AE%80%E4%BB%8B.ipynb)
 
-[10_02_集成学习_boosting_adaboost](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_02_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_adaboost.ipynb)
+[10_02_集成学习_boosting_adaboost_classifier](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_02_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_adaboost_classifier.ipynb)
+
+[10_03_集成学习_boosting_adaboost_regressor](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_02_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_adaboost_regressor.ipynb)
 
 
 
