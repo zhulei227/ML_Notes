@@ -36,5 +36,11 @@
 
 [10_03_集成学习_boosting_adaboost_regressor](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_02_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_adaboost_regressor.ipynb)
 
+[10_04_集成学习_boosting_提升树](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_04_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_%E6%8F%90%E5%8D%87%E6%A0%91.ipynb)
+
+[10_05_集成学习_boosting_gbdt_regressor](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_05_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_gbdt_regressor.ipynb)
+
+[10_06_集成学习_boosting_gbdt_classifier](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_06_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_gbdt_classifier.ipynb)
+
 
 
