@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e8d831f-9ae1-413c-88f4-a88b05385b47" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_classifier.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_regressor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/gradient_boosting_classifier_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/gradient_boosting_regressor_test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ml_models/ensemble/__init__.py" afterPath="$PROJECT_DIR$/ml_models/ensemble/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/10_04_集成学习_boosting_提升树.ipynb" afterPath="$PROJECT_DIR$/notebooks/10_04_集成学习_boosting_提升树.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_classifier.py" afterPath="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_classifier.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/10_06_集成学习_boosting_gbdt_classifier.ipynb" afterPath="$PROJECT_DIR$/notebooks/10_06_集成学习_boosting_gbdt_classifier.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +22,8 @@
       <file leaf-file-name="gradient_boosting_classifier.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="77" column="55" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="77" selection-end-column="55" />
+            <state relative-caret-position="491">
+              <caret line="59" column="57" lean-forward="true" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
               <folding>
                 <element signature="e#52#92#0" expanded="true" />
               </folding>
@@ -38,8 +34,8 @@
       <file leaf-file-name="gradient_boosting_classifier_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/gradient_boosting_classifier_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+            <state relative-caret-position="368">
+              <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -48,7 +44,7 @@
       <file leaf-file-name="classification.py" pinned="false" current-in-tab="false">
         <entry file="file://D:/app/Anaconda3/Lib/site-packages/sklearn/metrics/classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="23966">
               <caret line="1058" column="0" lean-forward="false" selection-start-line="1058" selection-start-column="0" selection-end-line="1058" selection-end-column="0" />
               <folding />
             </state>
@@ -58,7 +54,7 @@
       <file leaf-file-name="validation.py" pinned="false" current-in-tab="false">
         <entry file="file://D:/app/Anaconda3/Lib/site-packages/sklearn/utils/validation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="4324">
               <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
               <folding />
             </state>
@@ -68,7 +64,7 @@
       <file leaf-file-name="data_bin_wrapper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ml_models/wrapper_models/data_bin_wrapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="667">
               <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
@@ -78,7 +74,7 @@
       <file leaf-file-name="cart_classifier.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ml_models/tree/cart_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
+            <state relative-caret-position="3703">
               <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
               <folding />
             </state>
@@ -163,8 +159,8 @@
         <option value="$PROJECT_DIR$/tests/gradient_boosting_regressor_test.py" />
         <option value="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_regressor.py" />
         <option value="$PROJECT_DIR$/ml_models/ensemble/__init__.py" />
-        <option value="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_classifier.py" />
         <option value="$PROJECT_DIR$/tests/gradient_boosting_classifier_test.py" />
+        <option value="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_classifier.py" />
       </list>
     </option>
   </component>
@@ -784,9 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="695">
           <caret line="64" column="64" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="64" selection-end-column="64" />
-          <folding>
-            <element signature="e#24#64#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,7 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,9 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="19" column="40" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="e#52#92#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -819,7 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="66" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,9 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#34#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="10" column="29" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,13 +836,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-658">
           <caret line="8240" column="4" lean-forward="false" selection-start-line="8240" selection-start-column="4" selection-end-line="8240" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ml_models/tree/cart_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
+        <state relative-caret-position="3703">
           <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
           <folding />
         </state>
@@ -867,7 +849,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ml_models/wrapper_models/data_bin_wrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="667">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
@@ -875,7 +857,7 @@
     </entry>
     <entry file="file://D:/app/Anaconda3/Lib/site-packages/sklearn/utils/validation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="4324">
           <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
           <folding />
         </state>
@@ -883,7 +865,7 @@
     </entry>
     <entry file="file://D:/app/Anaconda3/Lib/site-packages/sklearn/metrics/classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="23966">
           <caret line="1058" column="0" lean-forward="false" selection-start-line="1058" selection-start-column="0" selection-end-line="1058" selection-end-column="0" />
           <folding />
         </state>
@@ -891,16 +873,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/gradient_boosting_classifier_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+        <state relative-caret-position="368">
+          <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="77" column="55" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="77" selection-end-column="55" />
+        <state relative-caret-position="491">
+          <caret line="59" column="57" lean-forward="true" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
           <folding>
             <element signature="e#52#92#0" expanded="true" />
           </folding>

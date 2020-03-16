@@ -48,8 +48,8 @@ class GradientBoostingClassifier(object):
             self.expand_base_estimators[class_index][0].fit(x, y_cate[:, class_index])
             y_pred_score_.append(self.expand_base_estimators[class_index][0].predict(x))
         y_pred_score_ = np.c_[y_pred_score_].T
-        # 计算梯度
-        new_y = utils.softmax(y_pred_score_) - y_cate
+        # 计算负梯度
+        new_y = y_cate - utils.softmax(y_pred_score_)
         # 训练后续模型
         for index in range(1, self.n_estimators):
             y_pred_score = []
@@ -57,7 +57,7 @@ class GradientBoostingClassifier(object):
                 self.expand_base_estimators[class_index][index].fit(x, new_y[:, class_index])
                 y_pred_score.append(self.expand_base_estimators[class_index][index].predict(x))
             y_pred_score_ += np.c_[y_pred_score].T * self.learning_rate
-            new_y = utils.softmax(y_pred_score_) - y_cate
+            new_y = y_cate - utils.softmax(y_pred_score_)
 
     def predict_proba(self, x):
         # TODO:并行优化
