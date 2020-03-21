@@ -38,9 +38,13 @@
 
 [10_04_集成学习_boosting_提升树](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_04_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_%E6%8F%90%E5%8D%87%E6%A0%91.ipynb)
 
-[10_05_集成学习_boosting_gbdt_regressor](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_05_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_gbdt_regressor.ipynb)
+[10_05_集成学习_boosting_gbm_regressor](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_05_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_gbm_regressor.ipynb)
 
-[10_06_集成学习_boosting_gbdt_classifier](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_06_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_gbdt_classifier.ipynb)
+[10_06_集成学习_boosting_gbm_classifier](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_06_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_gbm_classifier.ipynb)
 
+[10_07_集成学习_bagging](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_07_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_bagging.ipynb)
 
+[10_08_集成学习_bagging_randomforest](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_08_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_bagging_randomforest.ipynb)
+
+[10_09_集成学习_bagging_高阶组合_stacking](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_09_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_bagging_%E9%AB%98%E9%98%B6%E7%BB%84%E5%90%88_stacking.ipynb)
 
