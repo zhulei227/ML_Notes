@@ -1,6 +1,6 @@
 ### 机器学习笔记
 
-主要基于李航老师的《统计学习方法》第二版（但不限于书中的内容），对其中每个算法进行公式推导，相关问题分析，以及进行numpy实现，同时接口名称的设计考虑到工程应用上的简洁易用，后续内容持续更新（1~2周一更），目前实现的内容包括：  
+对目前主流的机器学习算法进行公式推导、问题分析以及代码实现（主要基于numpy），持续更新：  
 
 
 
@@ -48,3 +48,16 @@
 
 [10_09_集成学习_bagging_高阶组合_stacking](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_09_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_bagging_%E9%AB%98%E9%98%B6%E7%BB%84%E5%90%88_stacking.ipynb)
 
+[10_10_集成学习_xgboost_原理介绍及回归树的简单实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_10_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_xgboost_%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%9B%9E%E5%BD%92%E6%A0%91%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0.ipynb)
+
+[10_11_集成学习_xgboost_回归的简单实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_11_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_xgboost_%E5%9B%9E%E5%BD%92%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0.ipynb)
+
+[10_12_集成学习_xgboost_分类的简单实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_12_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_xgboost_%E5%88%86%E7%B1%BB%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0.ipynb)
+
+
+
+### 参考
+
+《统计学习方法》第二版  --李航   
+
+《深入理解XGBoost》      --何龙
