@@ -9,3 +9,5 @@ from .random_forest_regressor import *
 from .xgboost_base_tree import *
 from .xgboost_regressor import *
 from .xgboost_classifier import *
+from .dart_regressor import *
+from .dart_classifier import *

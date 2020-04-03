@@ -54,6 +54,14 @@
 
 [10_12_集成学习_xgboost_分类的简单实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_12_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_xgboost_%E5%88%86%E7%B1%BB%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0.ipynb)
 
+[10_13_集成学习_xgboost_优化介绍](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_13_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_xgboost_%E4%BC%98%E5%8C%96%E4%BB%8B%E7%BB%8D.ipynb)
+
+[10_14_集成学习_lightgbm_进一步优化](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_14_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_lightgbm_%E8%BF%9B%E4%B8%80%E6%AD%A5%E4%BC%98%E5%8C%96.ipynb)
+
+[10_15_集成学习_dart_提升树与dropout的碰撞](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_15_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_dart_%E6%8F%90%E5%8D%87%E6%A0%91%E4%B8%8Edropout%E7%9A%84%E7%A2%B0%E6%92%9E.ipynb)
+
+
+
 
 
 ### 参考
