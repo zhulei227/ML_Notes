@@ -1,6 +1,6 @@
 ### 机器学习笔记
 
-对目前主流的机器学习算法进行公式推导、问题分析以及代码实现（主要基于numpy），持续更新：  
+对目前主流的机器学习算法进行公式推导、问题分析以及代码实现（主要基于numpy），持续更新（下面链接如果加载不出来，对应内容可在notebooks文件夹下找到）：  
 
 
 
@@ -59,6 +59,10 @@
 [10_14_集成学习_lightgbm_进一步优化](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_14_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_lightgbm_%E8%BF%9B%E4%B8%80%E6%AD%A5%E4%BC%98%E5%8C%96.ipynb)
 
 [10_15_集成学习_dart_提升树与dropout的碰撞](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_15_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_dart_%E6%8F%90%E5%8D%87%E6%A0%91%E4%B8%8Edropout%E7%9A%84%E7%A2%B0%E6%92%9E.ipynb)
+
+[10_16_集成学习_树模型的可解释性_模型的特征重要性及样本的特征重要性(sabaas,shap)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_16_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_%E6%A0%91%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7_%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%89%B9%E5%BE%81%E9%87%8D%E8%A6%81%E6%80%A7%E5%8F%8A%E6%A0%B7%E6%9C%AC%E7%9A%84%E7%89%B9%E5%BE%81%E9%87%8D%E8%A6%81%E6%80%A7(sabaas%2Cshap).ipynb)
+
+
 
 
 
