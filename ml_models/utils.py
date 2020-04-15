@@ -245,6 +245,18 @@ def square_error_gain(x, y, sample_weight=None):
     return square_error(y, sample_weight) - cond_square_error(x, y, sample_weight)
 
 
+def gaussian_nd(x, u, sigma):
+    """
+    高维高斯函数
+    :param x:
+    :param u:
+    :param sigma:
+    :return:
+    """
+    return 1.0 / (np.power(2 * np.pi, x.shape[1] / 2) * np.sqrt(np.linalg.det(sigma))) * np.exp(
+        np.sum(-0.5 * (x - u).dot(np.linalg.inv(sigma)) * (x - u), axis=1))
+
+
 """
 绘制决策边界
 """
@@ -264,3 +276,18 @@ def plot_decision_function(X, y, clf, support_vectors=None):
     # 绘制支持向量
     if support_vectors is not None:
         plt.scatter(X[support_vectors, 0], X[support_vectors, 1], s=80, c='none', alpha=0.7, edgecolor='red')
+
+
+"""
+绘制等高线
+"""
+
+
+def plot_contourf(data, func, lines=3):
+    n = 256
+    x = np.linspace(data[:, 0].min(), data[:, 0].max(), n)
+    y = np.linspace(data[:, 1].min(), data[:, 1].max(), n)
+    X, Y = np.meshgrid(x, y)
+    C = plt.contour(X, Y, func(np.c_[X.reshape(-1), Y.reshape(-1)]).reshape(X.shape), lines, colors='g', linewidth=0.5)
+    plt.clabel(C, inline=True, fontsize=10)
+    plt.scatter(data[:, 0], data[:, 1])
