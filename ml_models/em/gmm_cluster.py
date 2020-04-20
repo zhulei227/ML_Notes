@@ -6,7 +6,7 @@ import numpy as np
 
 
 class GMMCluster(object):
-    def __init__(self, n_components=1, tol=1e-3, n_iter=100, verbose=False):
+    def __init__(self, n_components=1, tol=1e-5, n_iter=100, verbose=False):
         """
         使用EM训练GMM
         :param n_components: 高斯混合模型数量
@@ -36,9 +36,9 @@ class GMMCluster(object):
             self.params.append([alpha, u + np.random.random() * (max_value + min_value) / 2, sigma])
         # 计算当前的隐变量
         W = np.asarray([utils.gaussian_nd(X, u, sigma) * alpha for alpha, u, sigma in self.params]).T
-        W = W / np.sum(W, axis=1, keepdims=True)
         # 记录当前的log like hold
         current_log_loss = np.log(W.sum(axis=1)).sum() / n_sample
+        W = W / np.sum(W, axis=1, keepdims=True)
         # 迭代训练
         for _ in range(0, self.n_iter):
             if self.verbose is True:
@@ -55,10 +55,10 @@ class GMMCluster(object):
                      range(0, n_sample)], axis=0) / W[:, k].sum()  # 更新方差
             # 更新当前的隐变量
             W = np.asarray([utils.gaussian_nd(X, u, sigma) * alpha for alpha, u, sigma in self.params]).T
-            W = W / np.sum(W, axis=1, keepdims=True)
             # 计算log like hold
             new_log_loss = np.log(W.sum(axis=1)).sum() / n_sample
-            if np.abs(new_log_loss - current_log_loss) > np.log(self.tol):
+            W = W / np.sum(W, axis=1, keepdims=True)
+            if new_log_loss - current_log_loss > self.tol:
                 current_log_loss = new_log_loss
             else:
                 break

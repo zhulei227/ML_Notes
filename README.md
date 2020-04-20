@@ -70,6 +70,18 @@
 
 [11_04_EM_GMM分类实现及其与LogisticRegression的关系](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/11_04_EM_GMM%E5%88%86%E7%B1%BB%E5%AE%9E%E7%8E%B0%E5%8F%8A%E5%85%B6%E4%B8%8ELogisticRegression%E7%9A%84%E5%85%B3%E7%B3%BB.ipynb)
 
+[12_01_PGM_贝叶斯网(有向无环图)初探](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_01_PGM_%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91(%E6%9C%89%E5%90%91%E6%97%A0%E7%8E%AF%E5%9B%BE)%E5%88%9D%E6%8E%A2.ipynb)
+
+[12_02_PGM_朴素贝叶斯分类器实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_02_PGM_%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%88%86%E7%B1%BB%E5%99%A8%E5%AE%9E%E7%8E%B0.ipynb)
+
+[12_03_PGM_半朴素贝叶斯分类器实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_03_PGM_%E5%8D%8A%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%88%86%E7%B1%BB%E5%99%A8%E5%AE%9E%E7%8E%B0.ipynb)
+
+[12_04_PGM_朴素贝叶斯的聚类实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_04_PGM_%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%9A%84%E8%81%9A%E7%B1%BB%E5%AE%9E%E7%8E%B0.ipynb)
+
+
+
+
+
 
 
 
@@ -81,5 +93,7 @@
 ### 参考
 
 《统计学习方法》第二版  --李航   
+
+《机器学习》                     --周志华  
 
 《深入理解XGBoost》      --何龙

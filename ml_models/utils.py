@@ -245,6 +245,17 @@ def square_error_gain(x, y, sample_weight=None):
     return square_error(y, sample_weight) - cond_square_error(x, y, sample_weight)
 
 
+def gaussian_1d(x, u, sigma):
+    """
+    一维高斯概率分布函数
+    :param x:
+    :param u:
+    :param sigma:
+    :return:
+    """
+    return 1 / (np.sqrt(2 * np.pi) * sigma + 1e-12) * np.exp(-1 * np.power(x - u, 2) / (2 * sigma ** 2 + 1e-12))
+
+
 def gaussian_nd(x, u, sigma):
     """
     高维高斯函数
@@ -253,6 +264,8 @@ def gaussian_nd(x, u, sigma):
     :param sigma:
     :return:
     """
+    if x.ndim == 1:
+        x = np.expand_dims(x, axis=0)
     return 1.0 / (np.power(2 * np.pi, x.shape[1] / 2) * np.sqrt(np.linalg.det(sigma))) * np.exp(
         np.sum(-0.5 * (x - u).dot(np.linalg.inv(sigma)) * (x - u), axis=1))
 
