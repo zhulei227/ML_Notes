@@ -78,15 +78,11 @@
 
 [12_04_PGM_朴素贝叶斯的聚类实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_04_PGM_%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%9A%84%E8%81%9A%E7%B1%BB%E5%AE%9E%E7%8E%B0.ipynb)
 
+[12_05_PGM_马尔科夫链_初探及代码实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_05_PGM_%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB%E9%93%BE_%E5%88%9D%E6%8E%A2%E5%8F%8A%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0.ipynb)
 
+[12_06_PGM_马尔科夫链_语言模型及文本生成](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_06_PGM_%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB%E9%93%BE_%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%8F%8A%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90.ipynb)
 
-
-
-
-
-
-
-
+[12_07_PGM_马尔科夫链_PageRank算法](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_07_PGM_%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB%E9%93%BE_PageRank%E7%AE%97%E6%B3%95.ipynb)
 
 
 
