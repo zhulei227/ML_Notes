@@ -84,6 +84,14 @@
 
 [12_07_PGM_马尔科夫链_PageRank算法](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_07_PGM_%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB%E9%93%BE_PageRank%E7%AE%97%E6%B3%95.ipynb)
 
+[12_08_PGM_HMM_隐马模型：介绍及概率计算（前向、后向算法）](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_08_PGM_HMM_%E9%9A%90%E9%A9%AC%E6%A8%A1%E5%9E%8B%EF%BC%9A%E4%BB%8B%E7%BB%8D%E5%8F%8A%E6%A6%82%E7%8E%87%E8%AE%A1%E7%AE%97%EF%BC%88%E5%89%8D%E5%90%91%E3%80%81%E5%90%8E%E5%90%91%E7%AE%97%E6%B3%95%EF%BC%89.ipynb)
+
+[12_09_PGM_HMM_隐马模型：参数学习（有监督、无监督）](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_09_PGM_HMM_%E9%9A%90%E9%A9%AC%E6%A8%A1%E5%9E%8B%EF%BC%9A%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0%EF%BC%88%E6%9C%89%E7%9B%91%E7%9D%A3%E3%80%81%E6%97%A0%E7%9B%91%E7%9D%A3%EF%BC%89.ipynb)
+
+[12_10_PGM_HMM_隐马模型：隐状态预测](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_10_PGM_HMM_%E9%9A%90%E9%A9%AC%E6%A8%A1%E5%9E%8B%EF%BC%9A%E9%9A%90%E7%8A%B6%E6%80%81%E9%A2%84%E6%B5%8B.ipynb)
+
+[12_11_PGM_HMM_隐马模型实战：中文分词](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_11_PGM_HMM_%E9%9A%90%E9%A9%AC%E6%A8%A1%E5%9E%8B%E5%AE%9E%E6%88%98%EF%BC%9A%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D.ipynb)
+
 
 
 ### 参考
