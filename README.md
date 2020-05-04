@@ -92,6 +92,22 @@
 
 [12_11_PGM_HMM_隐马模型实战：中文分词](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_11_PGM_HMM_%E9%9A%90%E9%A9%AC%E6%A8%A1%E5%9E%8B%E5%AE%9E%E6%88%98%EF%BC%9A%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D.ipynb)
 
+[12_12_PGM_马尔科夫随机场（无向图）介绍](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_12_PGM_%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB%E9%9A%8F%E6%9C%BA%E5%9C%BA%EF%BC%88%E6%97%A0%E5%90%91%E5%9B%BE%EF%BC%89%E4%BB%8B%E7%BB%8D.ipynb)
+
+[12_13_PGM_CRF_条件随机场：定义及形式（简化、矩阵形式）](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_13_PGM_CRF_%E6%9D%A1%E4%BB%B6%E9%9A%8F%E6%9C%BA%E5%9C%BA%EF%BC%9A%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%BD%A2%E5%BC%8F%EF%BC%88%E7%AE%80%E5%8C%96%E3%80%81%E7%9F%A9%E9%98%B5%E5%BD%A2%E5%BC%8F%EF%BC%89.ipynb)
+
+[12_14_PGM_CRF_条件随机场：如何定义特征函数](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_14_PGM_CRF_%E6%9D%A1%E4%BB%B6%E9%9A%8F%E6%9C%BA%E5%9C%BA%EF%BC%9A%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89%E7%89%B9%E5%BE%81%E5%87%BD%E6%95%B0.ipynb)
+
+[12_15_PGM_CRF_条件随机场：概率及期望值计算（前向后向算法）](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_15_PGM_CRF_%E6%9D%A1%E4%BB%B6%E9%9A%8F%E6%9C%BA%E5%9C%BA%EF%BC%9A%E6%A6%82%E7%8E%87%E5%8F%8A%E6%9C%9F%E6%9C%9B%E5%80%BC%E8%AE%A1%E7%AE%97%EF%BC%88%E5%89%8D%E5%90%91%E5%90%8E%E5%90%91%E7%AE%97%E6%B3%95%EF%BC%89.ipynb)
+
+[12_16_PGM_CRF_条件随机场：参数学习](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_16_PGM_CRF_%E6%9D%A1%E4%BB%B6%E9%9A%8F%E6%9C%BA%E5%9C%BA%EF%BC%9A%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0.ipynb)
+
+[12_17_PGM_CRF_条件随机场：标签预测](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_17_PGM_CRF_%E6%9D%A1%E4%BB%B6%E9%9A%8F%E6%9C%BA%E5%9C%BA%EF%BC%9A%E6%A0%87%E7%AD%BE%E9%A2%84%E6%B5%8B.ipynb)
+
+[12_18_PGM_CRF_代码优化及中文分词实践](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_18_PGM_CRF_%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96%E5%8F%8A%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E5%AE%9E%E8%B7%B5.ipynb)
+
+[12_19_PGM_CRF与HMM之间的区别与联系](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_19_PGM_CRF%E4%B8%8EHMM%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB.ipynb)
+
 
 
 ### 参考
