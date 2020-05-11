@@ -108,6 +108,18 @@
 
 [12_19_PGM_CRF与HMM之间的区别与联系](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_19_PGM_CRF%E4%B8%8EHMM%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB.ipynb)
 
+[12_20_sampling_为什么要采样（求期望、积分等）](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_20_sampling_%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E9%87%87%E6%A0%B7%EF%BC%88%E6%B1%82%E6%9C%9F%E6%9C%9B%E3%80%81%E7%A7%AF%E5%88%86%E7%AD%89%EF%BC%89.ipynb)
+
+[12_21_sampling_MC采样：接受-拒绝采样、重要采样](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_21_sampling_MC%E9%87%87%E6%A0%B7%EF%BC%9A%E6%8E%A5%E5%8F%97-%E6%8B%92%E7%BB%9D%E9%87%87%E6%A0%B7%E3%80%81%E9%87%8D%E8%A6%81%E9%87%87%E6%A0%B7.ipynb)
+
+[12_22_sampling_MCMC：采样原理（再探马尔可夫链）](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_22_sampling_MCMC%EF%BC%9A%E9%87%87%E6%A0%B7%E5%8E%9F%E7%90%86%EF%BC%88%E5%86%8D%E6%8E%A2%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E9%93%BE%EF%BC%89.ipynb)
+
+[12_23_sampling_MCMC：MH采样的算法框架](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_23_sampling_MCMC%EF%BC%9AMH%E9%87%87%E6%A0%B7%E7%9A%84%E7%AE%97%E6%B3%95%E6%A1%86%E6%9E%B6.ipynb)
+
+[12_24_sampling_MCMC：单分量MH采样算法](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_24_sampling_MCMC%EF%BC%9A%E5%8D%95%E5%88%86%E9%87%8FMH%E9%87%87%E6%A0%B7%E7%AE%97%E6%B3%95.ipynb)
+
+[12_25_sampling_MCMC：Gibbs采样算法](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_25_sampling_MCMC%EF%BC%9AGibbs%E9%87%87%E6%A0%B7%E7%AE%97%E6%B3%95.ipynb)
+
 
 
 ### 参考
