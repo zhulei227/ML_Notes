@@ -2,12 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e8d831f-9ae1-413c-88f4-a88b05385b47" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ml_models/pgm/conditional_random_field.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/conditional_random_field_test.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/notebooks/10_12_集成学习_xgboost_分类的简单实现.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/notebooks/10_13_集成学习_xgboost_优化介绍.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/notebooks/10_14_集成学习_lightgbm_进一步优化.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/notebooks/10_15_集成学习_dart_提升树与dropout的碰撞.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/notebooks/10_16_集成学习_树模型的可解释性_模型的特征重要性及样本的特征重要性(sabaas,shap).ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/notebooks/source/06_.drawio" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ml_models/pgm/__init__.py" afterPath="$PROJECT_DIR$/ml_models/pgm/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/12_08_PGM_HMM_隐马模型：介绍及概率计算（前向、后向算法）.ipynb" afterPath="$PROJECT_DIR$/notebooks/12_08_PGM_HMM_隐马模型：介绍及概率计算（前向、后向算法）.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/12_11_PGM_HMM_隐马模型实战：中文分词.ipynb" afterPath="$PROJECT_DIR$/notebooks/12_11_PGM_HMM_隐马模型实战：中文分词.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ml_models/ensemble/xgboost_regressor.py" afterPath="$PROJECT_DIR$/ml_models/ensemble/xgboost_regressor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/01_线性模型_线性回归.ipynb" afterPath="$PROJECT_DIR$/notebooks/01_线性模型_线性回归.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/01_线性模型_线性回归_正则化(Lasso,Ridge,ElasticNet).ipynb" afterPath="$PROJECT_DIR$/notebooks/01_线性模型_线性回归_正则化(Lasso,Ridge,ElasticNet).ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/04_线性模型_感知机.ipynb" afterPath="$PROJECT_DIR$/notebooks/04_线性模型_感知机.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/05_线性模型_最大熵模型.ipynb" afterPath="$PROJECT_DIR$/notebooks/05_线性模型_最大熵模型.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/07_01_svm_硬间隔支持向量机与SMO.ipynb" afterPath="$PROJECT_DIR$/notebooks/07_01_svm_硬间隔支持向量机与SMO.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/07_02_svm_软间隔支持向量机.ipynb" afterPath="$PROJECT_DIR$/notebooks/07_02_svm_软间隔支持向量机.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/08_代价敏感学习_添加sample_weight支持.ipynb" afterPath="$PROJECT_DIR$/notebooks/08_代价敏感学习_添加sample_weight支持.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/09_01_决策树_ID3与C4.5.ipynb" afterPath="$PROJECT_DIR$/notebooks/09_01_决策树_ID3与C4.5.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/10_11_集成学习_xgboost_回归的简单实现.ipynb" afterPath="$PROJECT_DIR$/notebooks/10_11_集成学习_xgboost_回归的简单实现.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebooks/12_25_sampling_MCMC：Gibbs采样算法.ipynb" afterPath="$PROJECT_DIR$/notebooks/12_25_sampling_MCMC：Gibbs采样算法.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/xgboost_regressor_test.py" afterPath="$PROJECT_DIR$/tests/xgboost_regressor_test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,24 +36,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="conditional_random_field.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ml_models/pgm/conditional_random_field.py">
+      <file leaf-file-name="xgboost_regressor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ml_models/ensemble/xgboost_regressor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6187">
-              <caret line="269" column="26" lean-forward="true" selection-start-line="269" selection-start-column="26" selection-end-line="269" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="138">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="76" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conditional_random_field_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/conditional_random_field_test.py">
+      <file leaf-file-name="xgboost_regressor_test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/xgboost_regressor_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="345">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +103,6 @@
         <option value="$PROJECT_DIR$/tests/gradient_boosting_regressor_test.py" />
         <option value="$PROJECT_DIR$/ml_models/ensemble/xgboost_cart_regressor.py" />
         <option value="$PROJECT_DIR$/ml_models/ensemble/xgboost_base_tree.py" />
-        <option value="$PROJECT_DIR$/tests/xgboost_regressor_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/ensemble/xgboost_regressor.py" />
         <option value="$PROJECT_DIR$/tests/xgboost_classifier_test.py" />
         <option value="$PROJECT_DIR$/ml_models/ensemble/xgboost_classifier.py" />
         <option value="$PROJECT_DIR$/tests/dart_regressor_test.py" />
@@ -126,6 +138,8 @@
         <option value="$PROJECT_DIR$/tests/conditional_random_field_test1.py" />
         <option value="$PROJECT_DIR$/ml_models/pgm/conditional_random_field.py" />
         <option value="$PROJECT_DIR$/tests/conditional_random_field_test.py" />
+        <option value="$PROJECT_DIR$/ml_models/ensemble/xgboost_regressor.py" />
+        <option value="$PROJECT_DIR$/tests/xgboost_regressor_test.py" />
       </list>
     </option>
   </component>
@@ -151,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -206,13 +221,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pgm" />
+              <option name="myItemId" value="ensemble" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,25 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.conditional_random_field_test">
-    <configuration default="false" name="hidden_markov_model_test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Notes" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/hidden_markov_model_test2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.xgboost_regressor_test">
     <configuration default="false" name="hidden_markov_model_test3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -337,6 +333,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="xgboost_regressor_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ML_Notes" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/xgboost_regressor_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -403,19 +417,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.hidden_markov_model_test2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.hidden_markov_model_test3" />
-      <item index="2" class="java.lang.String" itemvalue="Python.conditional_random_field" />
-      <item index="3" class="java.lang.String" itemvalue="Python.conditional_random_field_test1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.conditional_random_field_test" />
+      <item index="0" class="java.lang.String" itemvalue="Python.hidden_markov_model_test3" />
+      <item index="1" class="java.lang.String" itemvalue="Python.conditional_random_field" />
+      <item index="2" class="java.lang.String" itemvalue="Python.conditional_random_field_test1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.conditional_random_field_test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.xgboost_regressor_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.conditional_random_field_test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.conditional_random_field_test1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.conditional_random_field" />
-        <item index="3" class="java.lang.String" itemvalue="Python.hidden_markov_model_test3" />
-        <item index="4" class="java.lang.String" itemvalue="Python.hidden_markov_model_test2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.xgboost_regressor_test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.conditional_random_field_test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.conditional_random_field_test1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.conditional_random_field" />
+        <item index="4" class="java.lang.String" itemvalue="Python.hidden_markov_model_test3" />
       </list>
     </recent_temporary>
   </component>
@@ -450,13 +464,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22257385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39847162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39847162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5043668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="false" weight="0.32916668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="406" y="293" width="1107" height="453" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -473,17 +487,17 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39847162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39847162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22257385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22257385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5043668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="false" weight="0.32916668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="406" y="293" width="1107" height="453" />
     </layout-to-restore>
   </component>
@@ -516,20 +530,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ml_models/ensemble/xgboost_regressor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1063">
-          <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/ensemble/xgboost_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_regressor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -821,15 +821,33 @@
     <entry file="file://$PROJECT_DIR$/tests/conditional_random_field_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ml_models/pgm/conditional_random_field.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6187">
-          <caret line="269" column="26" lean-forward="true" selection-start-line="269" selection-start-column="26" selection-end-line="269" selection-end-column="26" />
+        <state relative-caret-position="813">
+          <caret line="269" column="26" lean-forward="false" selection-start-line="269" selection-start-column="26" selection-end-line="269" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ml_models/ensemble/xgboost_regressor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="76" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/xgboost_regressor_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="46" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

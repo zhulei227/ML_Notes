@@ -8,12 +8,13 @@ import numpy as np
 
 
 class XGBoostRegressor(object):
-    def __init__(self, base_estimator=None, n_estimators=10, learning_rate=1.0, loss='squarederror'):
+    def __init__(self, base_estimator=None, n_estimators=10, learning_rate=1.0, loss='squarederror', p=2.5):
         """
         :param base_estimator: 基学习器
         :param n_estimators: 基学习器迭代数量
         :param learning_rate: 学习率，降低后续基学习器的权重，避免过拟合
-        :param loss:损失函数，支持squarederror、logistic、poisson
+        :param loss:损失函数，支持squarederror、logistic、poisson,gamma,tweedie
+        :param p:对tweedie回归生效
         """
         self.base_estimator = base_estimator
         self.n_estimators = n_estimators
@@ -29,6 +30,7 @@ class XGBoostRegressor(object):
         else:
             self.n_estimators = len(self.base_estimator)
         self.loss = loss
+        self.p = p
 
     def _get_gradient_hess(self, y, y_pred):
         """
@@ -43,6 +45,16 @@ class XGBoostRegressor(object):
             return utils.sigmoid(y_pred) - utils.sigmoid(y), utils.sigmoid(y_pred) * (1 - utils.sigmoid(y_pred))
         elif self.loss == 'poisson':
             return np.exp(y_pred) - y, np.exp(y_pred)
+        elif self.loss == 'gamma':
+            return 1.0 - y * np.exp(-1.0 * y_pred), y * np.exp(-1.0 * y_pred)
+        elif self.loss == 'tweedie':
+            if self.p == 1:
+                return np.exp(y_pred) - y, np.exp(y_pred)
+            elif self.p == 2:
+                return 1.0 - y * np.exp(-1.0 * y_pred), y * np.exp(-1.0 * y_pred)
+            else:
+                return np.exp(y_pred * (2.0 - self.p)) - y * np.exp(y_pred * (1.0 - self.p)), (2.0 - self.p) * np.exp(
+                    y_pred * (2.0 - self.p)) - (1.0 - self.p) * y * np.exp(y_pred * (1.0 - self.p))
 
     def fit(self, x, y):
         y_pred = np.zeros_like(y)
@@ -59,7 +71,7 @@ class XGBoostRegressor(object):
              range(1, self.n_estimators - 1)] +
             [self.base_estimator[self.n_estimators - 1].predict(x)]
             , axis=0)
-        if self.loss == "poisson":
+        if self.loss in ["poisson", "gamma", "tweedie"]:
             return np.exp(rst_np)
         else:
             return rst_np
