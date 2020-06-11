@@ -110,25 +110,31 @@
 
 [12_19_PGM_CRF与HMM之间的区别与联系](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_19_PGM_CRF%E4%B8%8EHMM%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB.ipynb)
 
-[12_20_sampling_为什么要采样（求期望、积分等）](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_20_sampling_%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E9%87%87%E6%A0%B7%EF%BC%88%E6%B1%82%E6%9C%9F%E6%9C%9B%E3%80%81%E7%A7%AF%E5%88%86%E7%AD%89%EF%BC%89.ipynb)
+[13_01_sampling_为什么要采样（求期望、积分等）](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/13_01_sampling_%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E9%87%87%E6%A0%B7%EF%BC%88%E6%B1%82%E6%9C%9F%E6%9C%9B%E3%80%81%E7%A7%AF%E5%88%86%E7%AD%89%EF%BC%89.ipynb)
 
-[12_21_sampling_MC采样：接受-拒绝采样、重要采样](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_21_sampling_MC%E9%87%87%E6%A0%B7%EF%BC%9A%E6%8E%A5%E5%8F%97-%E6%8B%92%E7%BB%9D%E9%87%87%E6%A0%B7%E3%80%81%E9%87%8D%E8%A6%81%E9%87%87%E6%A0%B7.ipynb)
+[13_02_sampling_MC采样：接受-拒绝采样、重要采样](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/13_02_sampling_MC%E9%87%87%E6%A0%B7%EF%BC%9A%E6%8E%A5%E5%8F%97-%E6%8B%92%E7%BB%9D%E9%87%87%E6%A0%B7%E3%80%81%E9%87%8D%E8%A6%81%E9%87%87%E6%A0%B7.ipynb)
 
-[12_22_sampling_MCMC：采样原理（再探马尔可夫链）](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_22_sampling_MCMC%EF%BC%9A%E9%87%87%E6%A0%B7%E5%8E%9F%E7%90%86%EF%BC%88%E5%86%8D%E6%8E%A2%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E9%93%BE%EF%BC%89.ipynb)
+[13_03_sampling_MCMC：采样原理（再探马尔可夫链）](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/13_03_sampling_MCMC%EF%BC%9A%E9%87%87%E6%A0%B7%E5%8E%9F%E7%90%86%EF%BC%88%E5%86%8D%E6%8E%A2%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E9%93%BE%EF%BC%89.ipynb)
 
-[12_23_sampling_MCMC：MH采样的算法框架](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_23_sampling_MCMC%EF%BC%9AMH%E9%87%87%E6%A0%B7%E7%9A%84%E7%AE%97%E6%B3%95%E6%A1%86%E6%9E%B6.ipynb)
+[13_04_sampling_MCMC：MH采样的算法框架](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/13_04_sampling_MCMC%EF%BC%9AMH%E9%87%87%E6%A0%B7%E7%9A%84%E7%AE%97%E6%B3%95%E6%A1%86%E6%9E%B6.ipynb)
 
-[12_24_sampling_MCMC：单分量MH采样算法](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_24_sampling_MCMC%EF%BC%9A%E5%8D%95%E5%88%86%E9%87%8FMH%E9%87%87%E6%A0%B7%E7%AE%97%E6%B3%95.ipynb)
+[13_05_sampling_MCMC：单分量MH采样算法](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/13_05_sampling_MCMC%EF%BC%9A%E5%8D%95%E5%88%86%E9%87%8FMH%E9%87%87%E6%A0%B7%E7%AE%97%E6%B3%95.ipynb)
 
-[12_25_sampling_MCMC：Gibbs采样算法](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_25_sampling_MCMC%EF%BC%9AGibbs%E9%87%87%E6%A0%B7%E7%AE%97%E6%B3%95.ipynb)
+[13_06_sampling_MCMC：Gibbs采样算法](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/13_06_sampling_MCMC%EF%BC%9AGibbs%E9%87%87%E6%A0%B7%E7%AE%97%E6%B3%95.ipynb)
 
-[12_26_概率分布：二项分布及beta分布](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_26_%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83%EF%BC%9A%E4%BA%8C%E9%A1%B9%E5%88%86%E5%B8%83%E5%8F%8Abeta%E5%88%86%E5%B8%83.ipynb)
+[14_01_概率分布：二项分布及beta分布](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/14_01_%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83%EF%BC%9A%E4%BA%8C%E9%A1%B9%E5%88%86%E5%B8%83%E5%8F%8Abeta%E5%88%86%E5%B8%83.ipynb)
 
-[12_27_概率分布：多项分布及狄利克雷分布](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_27_%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83%EF%BC%9A%E5%A4%9A%E9%A1%B9%E5%88%86%E5%B8%83%E5%8F%8A%E7%8B%84%E5%88%A9%E5%85%8B%E9%9B%B7%E5%88%86%E5%B8%83.ipynb)
+[14_02_概率分布：多项分布及狄利克雷分布](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/14_02_%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83%EF%BC%9A%E5%A4%9A%E9%A1%B9%E5%88%86%E5%B8%83%E5%8F%8A%E7%8B%84%E5%88%A9%E5%85%8B%E9%9B%B7%E5%88%86%E5%B8%83.ipynb)
 
-[12_28_概率分布：高斯分布（正态分布）及其共轭先验](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_28_%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83%EF%BC%9A%E9%AB%98%E6%96%AF%E5%88%86%E5%B8%83%EF%BC%88%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83%EF%BC%89%E5%8F%8A%E5%85%B6%E5%85%B1%E8%BD%AD%E5%85%88%E9%AA%8C.ipynb)
+[14_03_概率分布：高斯分布（正态分布）及其共轭先验](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/14_03_%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83%EF%BC%9A%E9%AB%98%E6%96%AF%E5%88%86%E5%B8%83%EF%BC%88%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83%EF%BC%89%E5%8F%8A%E5%85%B6%E5%85%B1%E8%BD%AD%E5%85%88%E9%AA%8C.ipynb)
 
-[12_29_概率分布：指数族分布](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/12_29_%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83%EF%BC%9A%E6%8C%87%E6%95%B0%E6%97%8F%E5%88%86%E5%B8%83.ipynb)
+[14_04_概率分布：指数族分布](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/14_04_%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83%EF%BC%9A%E6%8C%87%E6%95%B0%E6%97%8F%E5%88%86%E5%B8%83.ipynb)
+
+[15_01_VI_变分推断的原理推导](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/15_01_VI_%E5%8F%98%E5%88%86%E6%8E%A8%E6%96%AD%E7%9A%84%E5%8E%9F%E7%90%86%E6%8E%A8%E5%AF%BC.ipynb)
+
+[15_02_VI_变分推断与EM的关系](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/15_02_VI_%E5%8F%98%E5%88%86%E6%8E%A8%E6%96%AD%E4%B8%8EEM%E7%9A%84%E5%85%B3%E7%B3%BB.ipynb)
+
+[15_03_VI_一元高斯分布的变分推断实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/15_03_VI_%E4%B8%80%E5%85%83%E9%AB%98%E6%96%AF%E5%88%86%E5%B8%83%E7%9A%84%E5%8F%98%E5%88%86%E6%8E%A8%E6%96%AD%E5%AE%9E%E7%8E%B0.ipynb)
 
 
 

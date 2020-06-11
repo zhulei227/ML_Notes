@@ -5,5 +5,5 @@ X = X[:, ::-1]
 
 from ml_models.em import GMMCluster
 
-gmm = GMMCluster(verbose=True,n_iter=100,n_components=4)
+gmm = GMMCluster(verbose=True, n_iter=100, n_components=4)
 gmm.fit(X)
