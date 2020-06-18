@@ -62,7 +62,7 @@
 
 [10_16_集成学习_dart_提升树与dropout的碰撞](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_16_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_dart_%E6%8F%90%E5%8D%87%E6%A0%91%E4%B8%8Edropout%E7%9A%84%E7%A2%B0%E6%92%9E.ipynb)
 
-[10_17_集成学习_树模型的可解释性_模型的特征重要性及样本的特征重要性(sabaas,shap)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_17_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_%E6%A0%91%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7_%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%89%B9%E5%BE%81%E9%87%8D%E8%A6%81%E6%80%A7%E5%8F%8A%E6%A0%B7%E6%9C%AC%E7%9A%84%E7%89%B9%E5%BE%81%E9%87%8D%E8%A6%81%E6%80%A7(sabaas%2Cshap).ipynb)
+[10_17_集成学习_树模型的可解释性_模型的特征重要性及样本的特征重要性(sabaas,shap,tree shap)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_17_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_%E6%A0%91%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7_%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%89%B9%E5%BE%81%E9%87%8D%E8%A6%81%E6%80%A7%E5%8F%8A%E6%A0%B7%E6%9C%AC%E7%9A%84%E7%89%B9%E5%BE%81%E9%87%8D%E8%A6%81%E6%80%A7(sabaas%2Cshap%2Ctree%20shap).ipynb)
 
 [11_01_EM_GMM引入问题](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/11_01_EM_GMM%E5%BC%95%E5%85%A5%E9%97%AE%E9%A2%98.ipynb)
 
@@ -135,6 +135,8 @@
 [15_02_VI_变分推断与EM的关系](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/15_02_VI_%E5%8F%98%E5%88%86%E6%8E%A8%E6%96%AD%E4%B8%8EEM%E7%9A%84%E5%85%B3%E7%B3%BB.ipynb)
 
 [15_03_VI_一元高斯分布的变分推断实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/15_03_VI_%E4%B8%80%E5%85%83%E9%AB%98%E6%96%AF%E5%88%86%E5%B8%83%E7%9A%84%E5%8F%98%E5%88%86%E6%8E%A8%E6%96%AD%E5%AE%9E%E7%8E%B0.ipynb)
+
+[15_04_VI_高斯混合模型（GMM）的变分推断实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/15_04_VI_%E9%AB%98%E6%96%AF%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%EF%BC%88GMM%EF%BC%89%E7%9A%84%E5%8F%98%E5%88%86%E6%8E%A8%E6%96%AD%E5%AE%9E%E7%8E%B0.ipynb)
 
 
 

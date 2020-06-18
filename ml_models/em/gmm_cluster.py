@@ -42,8 +42,7 @@ class GMMCluster(object):
         # 迭代训练
         for _ in range(0, self.n_iter):
             if self.verbose is True:
-                utils.plot_contourf(X, lambda x: np.sum(
-                    [alpha * utils.gaussian_nd(x, u, sigma) for alpha, u, sigma in self.params], axis=0), lines=5)
+                utils.plot_contourf(X, lambda x: self.predict_sample_generate_proba(x), lines=5)
                 utils.plt.pause(0.1)
                 utils.plt.clf()
             # 更新高斯模型参数
@@ -63,8 +62,7 @@ class GMMCluster(object):
             else:
                 break
         if self.verbose:
-            utils.plot_contourf(X, lambda x: np.sum(
-                [alpha * utils.gaussian_nd(x, u, sigma) for alpha, u, sigma in self.params], axis=0), lines=5)
+            utils.plot_contourf(X, lambda x: self.predict_sample_generate_proba(x), lines=5)
             utils.plt.show()
 
     def predict_proba(self, X):

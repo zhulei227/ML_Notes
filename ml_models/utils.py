@@ -1,6 +1,6 @@
 import numpy as np
 import copy
-from collections import Counter
+from scipy import special
 import math
 import matplotlib.pyplot as plt
 
@@ -268,6 +268,61 @@ def gaussian_nd(x, u, sigma):
         x = np.expand_dims(x, axis=0)
     return 1.0 / (np.power(2 * np.pi, x.shape[1] / 2) * np.sqrt(np.linalg.det(sigma))) * np.exp(
         np.sum(-0.5 * (x - u).dot(np.linalg.inv(sigma)) * (x - u), axis=1))
+
+
+def dirichlet(u, alpha):
+    """
+    狄利克雷分布
+    :param u: 随机变量
+    :param alpha: 超参数
+    :return:
+    """
+    # 计算归一化因子
+    beta = special.gamma(np.sum(alpha))
+    for alp in alpha:
+        beta /= special.gamma(np.sum(alp))
+    rst = beta
+    # 计算结果
+    for idx in range(0, len(alpha)):
+        rst *= np.power(u[idx], alpha[idx] - 1)
+    return rst
+
+
+def wishart(Lambda, W, v):
+    """
+    wishart分布
+    :param Lambda:随机变量
+    :param W:超参数
+    :param v:超参数
+    :return:
+    """
+    # 维度
+    D = W.shape[0]
+    # 先计算归一化因子
+    B = np.power(np.linalg.det(W), -1 * v / 2)
+    B_ = np.power(2.0, v * D / 2) * np.power(np.pi, D * (D - 1) / 4)
+    for i in range(1, D + 1):
+        B_ *= special.gamma((v + 1 - i) / 2)
+    B = B / B_
+    # 计算剩余部分
+    rst = B * np.power(np.linalg.det(Lambda), (v - D - 1) / 2)
+    rst *= np.exp(-0.5 * np.trace(np.linalg.inv(W) @ Lambda))
+    return rst
+
+
+def St(X, mu, Lambda, v):
+    """
+    学生t分布
+    :param X: 随机变量
+    :param mu: 超参数
+    :param Lambda: 超参数
+    :param v: 超参数
+    :return:
+    """
+    n_sample, D = X.shape
+    return special.gamma(D / 2 + v / 2) * np.power(np.linalg.det(Lambda), 0.5) * np.power(
+        1 + np.sum((X - mu) @ Lambda * (X - mu), axis=1) / v, -1.0 * D / 2 - v / 2) / special.gamma(v / 2) / np.power(
+        np.pi * v, D / 2)
 
 
 """
