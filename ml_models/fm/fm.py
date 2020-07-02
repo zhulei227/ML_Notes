@@ -38,11 +38,11 @@ class FM(object):
         """
         # 去掉第一列bias
         X_ = X[:, 1:]
-        n_sample, n_feature = X_.shape
-        pol = (X_.reshape((n_sample, n_feature, 1)) * X_.reshape((n_sample, 1, n_feature))) * (
-            1 - np.eye(n_feature)) * (
-                  self.V @ self.V.T)
-        return X @ self.w.reshape(-1) + 0.5 * np.sum(pol, axis=(1, 2))
+        X_V = X_ @ self.V
+        X_V_2 = X_V * X_V
+        X_2_V_2 = (X_ * X_) @ (self.V * self.V)
+        pol = 0.5 * np.sum(X_V_2 - X_2_V_2, axis=1)
+        return X @ self.w.reshape(-1) + pol
 
     def fit(self, X, y):
         if self.normal:
@@ -54,8 +54,8 @@ class FM(object):
         n_sample, n_feature = X.shape
         x_y = np.c_[np.ones(n_sample), X, y]
         # 初始化参数
-        self.w = np.random.random((n_feature + 1, 1))
-        self.V = np.random.random((n_feature, self.hidden_dim))
+        self.w = np.random.random((n_feature + 1, 1))*1e-3
+        self.V = np.random.random((n_feature, self.hidden_dim))*1e-3
         # 更新参数
         count = 0
         for _ in tqdm(range(self.epochs)):
@@ -73,13 +73,13 @@ class FM(object):
                 # 更新 V
                 batch_x_ = batch_x[:, 1:]
                 V_X = batch_x_ @ self.V
-                X_V_X = batch_x_.reshape((batch_x_.shape[0], batch_x_.shape[1], 1)) * V_X.reshape(
-                    (V_X.shape[0], 1, V_X.shape[1]))
                 X_2 = batch_x_ * batch_x_
-                V_X_2 = X_2.reshape((X_2.shape[0], X_2.shape[1], 1)) * self.V.reshape(
-                    (1, self.V.shape[0], self.V.shape[1]))
-                self.V = self.V - self.lr * (np.sum(y_x_t.reshape((y_x_t.shape[0], 1, 1)) * (X_V_X - V_X_2),
-                                                                  axis=0) / self.batch_size + self.lamb * self.V)
+                for i in range(self.V.shape[0]):
+                    for f in range(self.V.shape[1]):
+                        self.V[i, f] -= self.lr * (
+                            np.sum(y_x_t.reshape(-1) * batch_x_[:, i] * V_X[:, f] - self.V[i, f] * X_2[:,
+                                                                                                   i]) / self.batch_size + self.lamb *
+                            self.V[i, f])
                 # 计算loss
                 loss = np.sum(np.abs(y - self.predict(X))) / n_sample
                 losses.append(loss)
@@ -93,7 +93,8 @@ class FM(object):
         if self.normal:
             X = (X - self.xmin) / self.xmax
         n_sample, n_feature = X.shape
-        pol = (X.reshape((n_sample, n_feature, 1)) * X.reshape((n_sample, 1, n_feature))) * (
-            1 - np.eye(n_feature)) * (
-                  self.V @ self.V.T)
-        return np.c_[np.ones(n_sample), X] @ self.w.reshape(-1) + 0.5 * np.sum(pol, axis=(1, 2))
+        X_V = X @ self.V
+        X_V_2 = X_V * X_V
+        X_2_V_2 = (X * X) @ (self.V * self.V)
+        pol = 0.5 * np.sum(X_V_2 - X_2_V_2, axis=1)
+        return np.c_[np.ones(n_sample), X] @ self.w.reshape(-1) + pol
