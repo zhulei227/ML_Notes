@@ -2,6 +2,7 @@
 FM因子分解机的简单实现，只实现了损失函数为平方损失的回归任务，更多功能扩展请使用后续的FFM
 """
 import numpy as np
+from tqdm import tqdm
 
 
 class FM(object):
@@ -57,9 +58,9 @@ class FM(object):
         self.V = np.random.random((n_feature, self.hidden_dim))
         # 更新参数
         count = 0
-        for _ in range(self.epochs):
+        for _ in tqdm(range(self.epochs)):
             np.random.shuffle(x_y)
-            for index in range(x_y.shape[0] // self.batch_size):
+            for index in tqdm(range(x_y.shape[0] // self.batch_size)):
                 count += 1
                 batch_x_y = x_y[self.batch_size * index:self.batch_size * (index + 1)]
                 batch_x = batch_x_y[:, :-1]
@@ -77,8 +78,8 @@ class FM(object):
                 X_2 = batch_x_ * batch_x_
                 V_X_2 = X_2.reshape((X_2.shape[0], X_2.shape[1], 1)) * self.V.reshape(
                     (1, self.V.shape[0], self.V.shape[1]))
-                self.V = self.V - self.lr * (np.sum(y_x_t * (X_V_X - V_X_2),
-                                                    axis=0) / self.batch_size + self.lamb * self.V)
+                self.V = self.V - self.lr * (np.sum(y_x_t.reshape((y_x_t.shape[0], 1, 1)) * (X_V_X - V_X_2),
+                                                                  axis=0) / self.batch_size + self.lamb * self.V)
                 # 计算loss
                 loss = np.sum(np.abs(y - self.predict(X))) / n_sample
                 losses.append(loss)
