@@ -13,10 +13,11 @@ class DataBinWrapper(object):
         # 构建分段数据
         self.XrangeMap = [[] for _ in range(0, n_feature)]
         for index in range(0, n_feature):
-            tmp = x[:, index]
+            tmp = sorted(x[:, index])
             for percent in range(1, self.max_bins):
                 percent_value = np.percentile(tmp, (1.0 * percent / self.max_bins) * 100.0 // 1)
                 self.XrangeMap[index].append(percent_value)
+            self.XrangeMap[index] = sorted(list(set(self.XrangeMap[index])))
 
     def transform(self, x):
         """
