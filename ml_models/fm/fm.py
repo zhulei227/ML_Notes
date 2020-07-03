@@ -2,16 +2,16 @@
 FM因子分解机的简单实现，只实现了损失函数为平方损失的回归任务，更多功能扩展请使用后续的FFM
 """
 import numpy as np
-from tqdm import tqdm
 
 
 class FM(object):
-    def __init__(self, epochs=1, lr=1e-3, batch_size=2, hidden_dim=4, lamb=1e-3, alpha=1e-3, normal=True,
-                 solver='adam', rho_1=0.9, rho_2=0.999):
+    def __init__(self, epochs=1, lr=1e-3, adjust_lr=True, batch_size=1, hidden_dim=4, lamb=1e-3, alpha=1e-3,
+                 normal=True, solver='adam', rho_1=0.9, rho_2=0.999, early_stopping_rounds=100):
         """
 
         :param epochs: 迭代轮数
         :param lr: 学习率
+        :param adjust_lr:是否根据特征数量再次调整学习率 max(lr,1/n_feature)
         :param batch_size:
         :param hidden_dim:隐变量维度
         :param lamb:l2正则项系数
@@ -20,9 +20,11 @@ class FM(object):
         :param solver:优化方式，包括sgd,adam,默认adam
         :param rho_1:adam的rho_1的权重衰减,solver=adam时生效
         :param rho_2:adam的rho_2的权重衰减,solver=adam时生效
+        :param early_stopping_rounds:对early_stopping进行支持，使用rmse作为评估指标，默认20
         """
         self.epochs = epochs
         self.lr = lr
+        self.adjust_lr = adjust_lr
         self.batch_size = batch_size
         self.hidden_dim = hidden_dim
         self.lamb = lamb
@@ -30,6 +32,7 @@ class FM(object):
         self.solver = solver
         self.rho_1 = rho_1
         self.rho_2 = rho_2
+        self.early_stopping_rounds = early_stopping_rounds
         # 初始化参数
         self.w = None  # w_0,w_i
         self.V = None  # v_{i,f}
@@ -53,17 +56,20 @@ class FM(object):
         pol = 0.5 * np.sum(X_V_2 - X_2_V_2, axis=1)
         return X @ self.w.reshape(-1) + pol
 
-    def fit(self, X, y):
+    def fit(self, X, y, eval_set=None, show_log=True):
+        X_o = X.copy()
         if self.normal:
             self.xmin = X.min(axis=0)
             self.xmax = X.max(axis=0)
             X = (X - self.xmin) / self.xmax
-        # 记录loss
-        losses = []
         n_sample, n_feature = X.shape
         x_y = np.c_[np.ones(n_sample), X, y]
+        # 记录loss
+        train_losses = []
+        eval_losses = []
         # 调整一下学习率
-        self.lr = max(self.lr, 1 / n_feature)
+        if self.adjust_lr:
+            self.lr = max(self.lr, 1 / n_feature)
         # 初始化参数
         self.w = np.random.random((n_feature + 1, 1)) * 1e-3
         self.V = np.random.random((n_feature, self.hidden_dim)) * 1e-3
@@ -75,9 +81,11 @@ class FM(object):
             V_2 = np.zeros_like(self.V)
         # 更新参数
         count = 0
-        for _ in tqdm(range(self.epochs)):
+        best_eval_value = np.power(2., 1023)
+        eval_count = 0
+        for epoch in range(self.epochs):
             np.random.shuffle(x_y)
-            for index in tqdm(range(x_y.shape[0] // self.batch_size)):
+            for index in range(x_y.shape[0] // self.batch_size):
                 count += 1
                 batch_x_y = x_y[self.batch_size * index:self.batch_size * (index + 1)]
                 batch_x = batch_x_y[:, :-1]
@@ -138,10 +146,32 @@ class FM(object):
                         V_2_ = V_2[:, f] / (1 - np.power(self.rho_2, count))
                         self.V[:, f] = self.V[:, f] - (self.lr * V_1_) / (np.sqrt(V_2_) + 1e-8)
 
-                # 计算loss
-                loss = np.sum(np.abs(y - self.predict(X))) / n_sample
-                losses.append(loss)
-        return losses
+                # 计算eval loss
+                eval_loss = None
+                if eval_set is not None:
+                    eval_x, eval_y = eval_set
+                    eval_loss = np.std(eval_y - self.predict(eval_x))
+                    eval_losses.append(eval_loss)
+                # 是否显示
+                if show_log:
+                    train_loss = np.std(y - self.predict(X_o))
+                    print("epoch:", epoch + 1, "/", self.epochs, ",samples:", (index + 1) * self.batch_size, "/",
+                          n_sample,
+                          ",train loss:",
+                          train_loss, ",eval loss:", eval_loss)
+                    train_losses.append(train_loss)
+                # 是否早停
+                if eval_loss is not None and self.early_stopping_rounds is not None:
+                    if eval_loss < best_eval_value:
+                        eval_count = 0
+                        best_eval_value = eval_loss
+                    else:
+                        eval_count += 1
+                    if eval_count >= self.early_stopping_rounds:
+                        print("---------------early_stopping-----------------------------")
+                        break
+
+        return train_losses, eval_losses
 
     def predict(self, X):
         """
