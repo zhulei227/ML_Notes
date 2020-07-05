@@ -92,8 +92,8 @@ class MultiClassWrapper(object):
             for task in tasks:
                 task.join()
             for task in tasks:
-                probas.append(task.get_result())
-            total_probas = np.concatenate(probas, axis=1)
+                probas.append(task.get_result()[:,1])
+            total_probas = np.asarray(probas).T
             # 归一化
             return total_probas / total_probas.sum(axis=1, keepdims=True)
         elif self.mode == 'ovo':
@@ -119,10 +119,10 @@ class MultiClassWrapper(object):
                 for second_cls in range(0, self.n_class + 1):
                     if first_cls != second_cls:
                         temp.append(probas[(first_cls, second_cls)])
-                temp = np.concatenate(temp, axis=1).sum(axis=1, keepdims=True)
+                temp = np.sum(temp,axis=0)[:,1]
                 total_probas.append(temp)
             # 归一化
-            total_probas = np.concatenate(total_probas, axis=1)
+            total_probas = np.asarray(total_probas).T
             return total_probas / total_probas.sum(axis=1, keepdims=True)
 
     def predict(self, x):

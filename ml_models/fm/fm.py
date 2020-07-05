@@ -81,9 +81,10 @@ class FM(object):
             V_2 = np.zeros_like(self.V)
         # 更新参数
         count = 0
-        best_eval_value = np.power(2., 1023)
-        eval_count = 0
         for epoch in range(self.epochs):
+            # 验证集记录
+            best_eval_value = np.power(2., 1023)
+            eval_count = 0
             np.random.shuffle(x_y)
             for index in range(x_y.shape[0] // self.batch_size):
                 count += 1

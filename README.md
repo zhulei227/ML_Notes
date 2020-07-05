@@ -140,6 +140,10 @@
 
 [17_01_FM_因子分解机的原理介绍及实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/17_01_FM_%E5%9B%A0%E5%AD%90%E5%88%86%E8%A7%A3%E6%9C%BA%E7%9A%84%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%AE%9E%E7%8E%B0.ipynb)
 
+[17_02_FM_FFM的原理介绍及实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/17_02_FM_FFM%E7%9A%84%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%AE%9E%E7%8E%B0.ipynb)
+
+[17_03_FM_FFM的损失函数扩展(possion,gamma,tweedie回归实现以及分类实现)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/17_03_FM_FFM%E7%9A%84%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E6%89%A9%E5%B1%95(possion%2Cgamma%2Ctweedie%E5%9B%9E%E5%BD%92%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E5%88%86%E7%B1%BB%E5%AE%9E%E7%8E%B0).ipynb)
+
 
 
 ### 参考
