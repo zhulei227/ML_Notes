@@ -2,11 +2,13 @@
 FM因子分解机的简单实现，只实现了损失函数为平方损失的回归任务，更多功能扩展请使用后续的FFM
 """
 import numpy as np
+from ml_models import utils
 
 
 class FM(object):
     def __init__(self, epochs=1, lr=1e-3, adjust_lr=True, batch_size=1, hidden_dim=4, lamb=1e-3, alpha=1e-3,
-                 normal=True, solver='adam', rho_1=0.9, rho_2=0.999, early_stopping_rounds=100):
+                 normal=True, solver='adam', rho_1=0.9, rho_2=0.999, early_stopping_rounds=20,
+                 objective="squarederror", tweedie_p=1.5):
         """
 
         :param epochs: 迭代轮数
@@ -21,6 +23,8 @@ class FM(object):
         :param rho_1:adam的rho_1的权重衰减,solver=adam时生效
         :param rho_2:adam的rho_2的权重衰减,solver=adam时生效
         :param early_stopping_rounds:对early_stopping进行支持，使用rmse作为评估指标，默认20
+        :param objective:损失函数，回归任务支持squarederror,poisson,gamma,tweedie，分类任务支持logistic
+        :param tweedie_p:teweedie的超参数，objective=tweedie时生效
         """
         self.epochs = epochs
         self.lr = lr
@@ -33,6 +37,8 @@ class FM(object):
         self.rho_1 = rho_1
         self.rho_2 = rho_2
         self.early_stopping_rounds = early_stopping_rounds
+        self.objective = objective
+        self.tweedie_p = tweedie_p
         # 初始化参数
         self.w = None  # w_0,w_i
         self.V = None  # v_{i,f}
@@ -60,7 +66,7 @@ class FM(object):
         X_o = X.copy()
         if self.normal:
             self.xmin = X.min(axis=0)
-            self.xmax = X.max(axis=0)
+            self.xmax = X.max(axis=0) + 1e-7
             X = (X - self.xmin) / self.xmax
         n_sample, n_feature = X.shape
         x_y = np.c_[np.ones(n_sample), X, y]
@@ -91,8 +97,25 @@ class FM(object):
                 batch_x_y = x_y[self.batch_size * index:self.batch_size * (index + 1)]
                 batch_x = batch_x_y[:, :-1]
                 batch_y = batch_x_y[:, -1:]
-                # 计算y(x)-t
-                y_x_t = self._y(batch_x).reshape((-1, 1)) - batch_y
+                # 计算链式求导第一层梯度
+                if self.objective == "squarederror":
+                    y_x_t = self._y(batch_x).reshape((-1, 1)) - batch_y
+                elif self.objective == "poisson":
+                    y_x_t = np.exp(self._y(batch_x).reshape((-1, 1))) - batch_y
+                elif self.objective == "gamma":
+                    y_x_t = 1.0 - batch_y * np.exp(-1.0 * self._y(batch_x).reshape((-1, 1)))
+                elif self.objective == 'tweedie':
+                    if self.tweedie_p == 1:
+                        y_x_t = np.exp(self._y(batch_x).reshape((-1, 1))) - batch_y
+                    elif self.tweedie_p == 2:
+                        y_x_t = 1.0 - batch_y * np.exp(-1.0 * self._y(batch_x).reshape((-1, 1)))
+                    else:
+                        y_x_t = np.exp(self._y(batch_x).reshape((-1, 1)) * (2.0 - self.tweedie_p)) \
+                                - batch_y * np.exp(self._y(batch_x).reshape((-1, 1)) * (1.0 - self.tweedie_p))
+                else:
+                    # 二分类
+                    y_x_t = utils.sigmoid(self._y(batch_x).reshape((-1, 1))) - batch_y
+
                 # 更新w
                 if self.solver == 'sgd':
                     self.w = self.w - (self.lr * (np.sum(y_x_t * batch_x, axis=0) / self.batch_size).reshape(
@@ -174,6 +197,22 @@ class FM(object):
 
         return train_losses, eval_losses
 
+    def predict_proba(self, X):
+        """
+        :param X:
+        :return:
+        """
+        if self.normal:
+            X = (X - self.xmin) / self.xmax
+        n_sample, n_feature = X.shape
+        X_V = X @ self.V
+        X_V_2 = X_V * X_V
+        X_2_V_2 = (X * X) @ (self.V * self.V)
+        pol = 0.5 * np.sum(X_V_2 - X_2_V_2, axis=1)
+        linear_rst = np.c_[np.ones(n_sample), X] @ self.w.reshape(-1) + pol
+        pos_proba = utils.sigmoid(linear_rst)
+        return np.c_[1.0 - pos_proba, pos_proba]
+
     def predict(self, X):
         """
         :param X:
@@ -186,4 +225,10 @@ class FM(object):
         X_V_2 = X_V * X_V
         X_2_V_2 = (X * X) @ (self.V * self.V)
         pol = 0.5 * np.sum(X_V_2 - X_2_V_2, axis=1)
-        return np.c_[np.ones(n_sample), X] @ self.w.reshape(-1) + pol
+        linear_rst = np.c_[np.ones(n_sample), X] @ self.w.reshape(-1) + pol
+        if self.objective == "squarederror":
+            return linear_rst
+        elif self.objective in ["poisson", "gamma", "tweedie"]:
+            return np.exp(linear_rst)
+        else:
+            return utils.sigmoid(linear_rst) > 0.5

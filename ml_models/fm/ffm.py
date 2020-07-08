@@ -84,7 +84,7 @@ class FFM(object):
         # 归一化
         if self.normal:
             self.xmin = X.min(axis=0)
-            self.xmax = X.max(axis=0)
+            self.xmax = X.max(axis=0) + 1e-7
             X = (X - self.xmin) / self.xmax
 
         n_sample, n_feature = X.shape
@@ -265,7 +265,7 @@ class FFM(object):
                 pol += X_[:, i] * X_[:, j] * np.dot(self.V[i, self.fields[self.positive_ind + j]],
                                                     self.V[j, self.fields[self.positive_ind + i]])
         pos_proba = utils.sigmoid(np.c_[np.ones(n_sample), X] @ self.w.reshape(-1) + pol)
-        return np.c_[1.0-pos_proba,pos_proba]
+        return np.c_[1.0 - pos_proba, pos_proba]
 
     def predict(self, X):
         """
