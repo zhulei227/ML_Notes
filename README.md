@@ -138,6 +138,10 @@
 
 [15_04_VI_高斯混合模型（GMM）的变分推断实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/15_04_VI_%E9%AB%98%E6%96%AF%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%EF%BC%88GMM%EF%BC%89%E7%9A%84%E5%8F%98%E5%88%86%E6%8E%A8%E6%96%AD%E5%AE%9E%E7%8E%B0.ipynb)
 
+[15_05_VI_线性回归模型的贝叶斯估计实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/15_05_VI_%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%B0%E8%AE%A1%E5%AE%9E%E7%8E%B0.ipynb)
+
+[15_06_VI_线性回归模型的变分推断实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/15_06_VI_%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%8F%98%E5%88%86%E6%8E%A8%E6%96%AD%E5%AE%9E%E7%8E%B0.ipynb)
+
 [17_01_FM_因子分解机的原理介绍及实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/17_01_FM_%E5%9B%A0%E5%AD%90%E5%88%86%E8%A7%A3%E6%9C%BA%E7%9A%84%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%AE%9E%E7%8E%B0.ipynb)
 
 [17_02_FM_FFM的原理介绍及实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/17_02_FM_FFM%E7%9A%84%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%AE%9E%E7%8E%B0.ipynb)

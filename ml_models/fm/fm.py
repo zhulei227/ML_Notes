@@ -66,7 +66,7 @@ class FM(object):
         X_o = X.copy()
         if self.normal:
             self.xmin = X.min(axis=0)
-            self.xmax = X.max(axis=0) + 1e-7
+            self.xmax = X.max(axis=0) + 1e-8
             X = (X - self.xmin) / self.xmax
         n_sample, n_feature = X.shape
         x_y = np.c_[np.ones(n_sample), X, y]
@@ -117,13 +117,13 @@ class FM(object):
                     y_x_t = utils.sigmoid(self._y(batch_x).reshape((-1, 1))) - batch_y
 
                 # 更新w
+                w_reg = self.lamb * self.w + self.alpha * np.where(self.w > 0, 1, 0)
+                w_reg[0, 0] = 0.0
+                w_grad = (np.sum(y_x_t * batch_x, axis=0) / self.batch_size).reshape(
+                    (-1, 1)) + w_reg
                 if self.solver == 'sgd':
-                    self.w = self.w - (self.lr * (np.sum(y_x_t * batch_x, axis=0) / self.batch_size).reshape(
-                        (-1, 1)) + self.lamb * self.w + self.alpha * np.where(self.w > 0, 1, 0))
+                    self.w = self.w - self.lr * w_grad
                 elif self.solver == 'adam':
-                    w_reg = self.lamb * self.w + self.alpha * np.where(self.w > 0, 1, 0)
-                    w_grad = (np.sum(y_x_t * batch_x, axis=0) / self.batch_size).reshape(
-                        (-1, 1)) + w_reg
                     w_1 = self.rho_1 * w_1 + (1 - self.rho_1) * w_grad
                     w_2 = self.rho_2 * w_2 + (1 - self.rho_2) * w_grad * w_grad
                     w_1_ = w_1 / (1 - np.power(self.rho_1, count))
@@ -153,17 +153,12 @@ class FM(object):
 
                 # 从隐变量的维度进行更新
                 for f in range(self.V.shape[1]):
+                    V_reg = self.lamb * self.V[:, f] + self.alpha * (self.V[:, f] > 0)
+                    V_grad = np.sum(y_x_t * (batch_x_ * V_X[:, f].reshape((-1, 1)) - X_2 * self.V[:, f]),
+                                    axis=0) + V_reg
                     if self.solver == 'sgd':
-                        V_grad = np.sum(
-                            y_x_t.reshape((-1, 1)) * (batch_x_ * V_X[:, f].reshape((-1, 1)) - X_2 * self.V[:, f]),
-                            axis=0)
-                        self.V[:, f] = self.V[:, f] - self.lr * V_grad - self.lamb * self.V[:, f] - self.alpha * (
-                            self.V[:, f] > 0)
+                        self.V[:, f] = self.V[:, f] - self.lr * V_grad
                     elif self.solver == 'adam':
-                        V_reg = self.lamb * self.V[:, f] + self.alpha * (self.V[:, f] > 0)
-                        V_grad = np.sum(
-                            y_x_t.reshape((-1, 1)) * (batch_x_ * V_X[:, f].reshape((-1, 1)) - X_2 * self.V[:, f]),
-                            axis=0) + V_reg
                         V_1[:, f] = self.rho_1 * V_1[:, f] + (1 - self.rho_1) * V_grad
                         V_2[:, f] = self.rho_2 * V_2[:, f] + (1 - self.rho_2) * V_grad * V_grad
                         V_1_ = V_1[:, f] / (1 - np.power(self.rho_1, count))
