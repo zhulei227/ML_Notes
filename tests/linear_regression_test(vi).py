@@ -17,7 +17,7 @@ Y = np.concatenate([Y, np.asanyarray([[3000], [3300], [3600], [3800], [3900]])])
 from ml_models.vi import LinearRegression
 
 # 测试
-lr = LinearRegression()
+lr = LinearRegression(basis_func=['linear', 'fm'])
 lr.fit(X[:, :-1], Y)
 predict = lr.predict(X[:, :-1])
 # 查看标准差
