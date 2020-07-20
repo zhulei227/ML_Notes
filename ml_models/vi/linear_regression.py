@@ -10,12 +10,13 @@ import matplotlib.pyplot as plt
 
 
 class LinearRegression1(object):
-    def __init__(self, basis_func=None, beta=1e-12, tol=1e-5, epochs=100):
+    def __init__(self, basis_func=None, beta=1e-12, tol=1e-5, epochs=100, normalized=True):
         """
         :param basis_func: list,基函数列表，包括rbf,sigmoid,poly_{num},linear，fm,默认None为linear，其中poly_{num}中的{num}表示多项式的最高阶数,fm表示构建交叉因子
         :param beta: 生成t标签的高斯噪声，这里可以设置低一点
         :param tol:  两次迭代参数平均绝对值变化小于tol则停止
         :param epochs: 默认迭代次数
+        :param normalized:是否归一化
         """
         if basis_func is None:
             self.basis_func = ['linear']
@@ -24,6 +25,7 @@ class LinearRegression1(object):
         self.beta = beta
         self.tol = tol
         self.epochs = epochs
+        self.normalized = normalized
         # 特征均值、标准差
         self.feature_mean = None
         self.feature_std = None
@@ -60,9 +62,12 @@ class LinearRegression1(object):
         return np.concatenate(x_list, axis=1)
 
     def fit(self, X, y):
-        self.feature_mean = np.mean(X, axis=0)
-        self.feature_std = np.std(X, axis=0) + 1e-8
-        X_ = (X - self.feature_mean) / self.feature_std
+        if self.normalized:
+            self.feature_mean = np.mean(X, axis=0)
+            self.feature_std = np.std(X, axis=0) + 1e-8
+            X_ = (X - self.feature_mean) / self.feature_std
+        else:
+            X_ = X
         X_ = self._map_basis(X_)
         X_ = np.c_[np.ones(X_.shape[0]), X_]
         n_sample, n_feature = X_.shape
@@ -79,7 +84,10 @@ class LinearRegression1(object):
             E_alpha = (n_feature - 1) / E_w  # 这里假设a_0,b_0都为0
 
     def predict(self, X):
-        X_ = (X - self.feature_mean) / self.feature_std
+        if self.normalized:
+            X_ = (X - self.feature_mean) / self.feature_std
+        else:
+            X_ = X
         X_ = self._map_basis(X_)
         X_ = np.c_[np.ones(X_.shape[0]), X_]
         return (self.w.T @ X_.T).reshape(-1)
@@ -101,11 +109,12 @@ class LinearRegression1(object):
 
 
 class LinearRegression(object):
-    def __init__(self, basis_func=None, tol=1e-5, epochs=100):
+    def __init__(self, basis_func=None, tol=1e-5, epochs=100, normalized=True):
         """
         :param basis_func: list,基函数列表，包括rbf,sigmoid,poly_{num},linear，fm,默认None为linear，其中poly_{num}中的{num}表示多项式的最高阶数,fm表示构建交叉因子
         :param tol:  两次迭代参数平均绝对值变化小于tol则停止
         :param epochs: 默认迭代次数
+        :param normalized:是否归一化
         """
         if basis_func is None:
             self.basis_func = ['linear']
@@ -113,6 +122,7 @@ class LinearRegression(object):
             self.basis_func = basis_func
         self.tol = tol
         self.epochs = epochs
+        self.normalized = normalized
         # 特征均值、标准差
         self.feature_mean = None
         self.feature_std = None
@@ -149,9 +159,12 @@ class LinearRegression(object):
         return np.concatenate(x_list, axis=1)
 
     def fit(self, X, y):
-        self.feature_mean = np.mean(X, axis=0)
-        self.feature_std = np.std(X, axis=0) + 1e-8
-        X_ = (X - self.feature_mean) / self.feature_std
+        if self.normalized:
+            self.feature_mean = np.mean(X, axis=0)
+            self.feature_std = np.std(X, axis=0) + 1e-8
+            X_ = (X - self.feature_mean) / self.feature_std
+        else:
+            X_ = X
         X_ = self._map_basis(X_)
         X_ = np.c_[np.ones(X_.shape[0]), X_]
         n_sample, n_feature = X_.shape
@@ -173,7 +186,10 @@ class LinearRegression(object):
             E_beta = (n_sample - 1) / E_w_phi  # 这里假设a_1,b_1都为0
 
     def predict(self, X):
-        X_ = (X - self.feature_mean) / self.feature_std
+        if self.normalized:
+            X_ = (X - self.feature_mean) / self.feature_std
+        else:
+            X_ = X
         X_ = self._map_basis(X_)
         X_ = np.c_[np.ones(X_.shape[0]), X_]
         return (self.w.T @ X_.T).reshape(-1)

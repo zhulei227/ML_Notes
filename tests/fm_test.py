@@ -50,7 +50,7 @@ X_train, X_test, y_train, y_test = train_test_split(data, target, test_size=0.4,
 # model = FM(batch_size=10, epochs=5, objective='poisson')
 # model = FM(batch_size=10, epochs=5)
 # train_losses, eval_losses = model.fit(X_train, y_train, eval_set=(X_test, y_test))
-model = LinearRegression()
+model = LinearRegression(normalized=False)
 model.fit(X_train, y_train)
 
 plt.scatter(data[:, 0], target)
