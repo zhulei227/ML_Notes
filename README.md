@@ -146,6 +146,12 @@
 
 [15_08_VI_线性回归模型的贝叶斯估计实现：进一步扩展VI](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/15_08_VI_%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%B0%E8%AE%A1%E5%AE%9E%E7%8E%B0%EF%BC%9A%E8%BF%9B%E4%B8%80%E6%AD%A5%E6%89%A9%E5%B1%95VI.ipynb)
 
+[16_01_LDA_主题模型原理](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/16_01_LDA_%E4%B8%BB%E9%A2%98%E6%A8%A1%E5%9E%8B%E5%8E%9F%E7%90%86.ipynb)
+
+[16_02_LDA_Gibss采样实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/16_02_LDA_Gibss%E9%87%87%E6%A0%B7%E5%AE%9E%E7%8E%B0.ipynb)
+
+[16_03_LDA_变分EM实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/16_03_LDA_%E5%8F%98%E5%88%86EM%E5%AE%9E%E7%8E%B0.ipynb)
+
 [17_01_FM_因子分解机的原理介绍及实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/17_01_FM_%E5%9B%A0%E5%AD%90%E5%88%86%E8%A7%A3%E6%9C%BA%E7%9A%84%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%AE%9E%E7%8E%B0.ipynb)
 
 [17_02_FM_FFM的原理介绍及实现](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/17_02_FM_FFM%E7%9A%84%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%AE%9E%E7%8E%B0.ipynb)
