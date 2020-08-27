@@ -158,6 +158,14 @@
 
 [17_03_FM_FFM的损失函数扩展(possion,gamma,tweedie回归实现以及分类实现)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/17_03_FM_FFM%E7%9A%84%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E6%89%A9%E5%B1%95(possion%2Cgamma%2Ctweedie%E5%9B%9E%E5%BD%92%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E5%88%86%E7%B1%BB%E5%AE%9E%E7%8E%B0).ipynb)
 
+[18_01_聚类_距离度量以及性能评估](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/18_01_%E8%81%9A%E7%B1%BB_%E8%B7%9D%E7%A6%BB%E5%BA%A6%E9%87%8F%E4%BB%A5%E5%8F%8A%E6%80%A7%E8%83%BD%E8%AF%84%E4%BC%B0.ipynb)
+
+[18_02_聚类_层次聚类_AGNES](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/18_02_%E8%81%9A%E7%B1%BB_%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB_AGNES.ipynb)
+
+[18_03_聚类_密度聚类_DBSCAN](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/18_03_%E8%81%9A%E7%B1%BB_%E5%AF%86%E5%BA%A6%E8%81%9A%E7%B1%BB_DBSCAN.ipynb)
+
+[18_04_聚类_原型聚类_K均值](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/18_04_%E8%81%9A%E7%B1%BB_%E5%8E%9F%E5%9E%8B%E8%81%9A%E7%B1%BB_K%E5%9D%87%E5%80%BC.ipynb)
+
 
 
 ### 参考
