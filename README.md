@@ -34,7 +34,7 @@
 
 [10_02_集成学习_boosting_adaboost_classifier](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_02_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_adaboost_classifier.ipynb)
 
-[10_03_集成学习_boosting_adaboost_regressor](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_02_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_adaboost_regressor.ipynb)
+[10_03_集成学习_boosting_adaboost_regressor](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_03_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_adaboost_regressor.ipynb)
 
 [10_04_集成学习_boosting_提升树](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/10_04_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0_boosting_%E6%8F%90%E5%8D%87%E6%A0%91.ipynb)
 
@@ -165,6 +165,20 @@
 [18_03_聚类_密度聚类_DBSCAN](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/18_03_%E8%81%9A%E7%B1%BB_%E5%AF%86%E5%BA%A6%E8%81%9A%E7%B1%BB_DBSCAN.ipynb)
 
 [18_04_聚类_原型聚类_K均值](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/18_04_%E8%81%9A%E7%B1%BB_%E5%8E%9F%E5%9E%8B%E8%81%9A%E7%B1%BB_K%E5%9D%87%E5%80%BC.ipynb)
+
+[18_05_聚类_原型聚类_LVQ](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/18_05_%E8%81%9A%E7%B1%BB_%E5%8E%9F%E5%9E%8B%E8%81%9A%E7%B1%BB_LVQ.ipynb)
+
+[19_01_降维_奇异值分解(SVD)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/19_01_%E9%99%8D%E7%BB%B4_%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3(SVD).ipynb)
+
+[19_02_降维_主成分分析(PCA)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/19_02_%E9%99%8D%E7%BB%B4_%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90(PCA).ipynb)
+
+[19_03_降维_线性判别分析(LDA)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/19_03_%E9%99%8D%E7%BB%B4_%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%88%86%E6%9E%90(LDA).ipynb)
+
+[19_04_降维_多维缩放(MDS)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/19_04_%E9%99%8D%E7%BB%B4_%E5%A4%9A%E7%BB%B4%E7%BC%A9%E6%94%BE(MDS).ipynb)
+
+[19_05_降维_流形学习_等度量映射(Isomap)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/19_05_%E9%99%8D%E7%BB%B4_%E6%B5%81%E5%BD%A2%E5%AD%A6%E4%B9%A0_%E7%AD%89%E5%BA%A6%E9%87%8F%E6%98%A0%E5%B0%84(Isomap).ipynb)
+
+[19_06_降维_流形学习_局部线性嵌入(LLE)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/19_06_%E9%99%8D%E7%BB%B4_%E6%B5%81%E5%BD%A2%E5%AD%A6%E4%B9%A0_%E5%B1%80%E9%83%A8%E7%BA%BF%E6%80%A7%E5%B5%8C%E5%85%A5(LLE).ipynb)
 
 
 
