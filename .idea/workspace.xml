@@ -2,79 +2,136 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e8d831f-9ae1-413c-88f4-a88b05385b47" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ml_models/decomposition/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ml_models/decomposition/isomap.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ml_models/decomposition/lda.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ml_models/decomposition/lle.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ml_models/decomposition/mds.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ml_models/decomposition/pca.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/isomap_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/lda_test(线性判别分析).py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/lle_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/mds_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/pca_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/ML_Notes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML_Notes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/bayes/linear_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/bayes/linear_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/cluster/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/cluster/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/cluster/agnes.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/cluster/agnes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/cluster/dbscan.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/cluster/dbscan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/cluster/kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/cluster/kmeans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/cluster/lvq.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/cluster/lvq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/isomap.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/isomap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/lda.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/lda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/lle.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/lle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/mds.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/mds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/pca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/em/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/em/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/em/gmm_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/em/gmm_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/em/gmm_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/em/gmm_cluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/adaboost_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/adaboost_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/adaboost_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/adaboost_regressor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/bagging_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/bagging_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/bagging_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/bagging_regressor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/dart_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/dart_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/dart_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/dart_regressor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_regressor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/random_forest_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/random_forest_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/random_forest_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/random_forest_regressor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/xgboost_base_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/xgboost_base_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/xgboost_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/xgboost_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/xgboost_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/xgboost_regressor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/explain/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/explain/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/explain/shap.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/explain/shap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/explain/tree_shap.h" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/explain/tree_shap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/fm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/fm/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/fm/ffm.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/fm/ffm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/fm/fm.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/fm/fm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/kernel_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/kernel_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/latent_dirichlet_allocation/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/latent_dirichlet_allocation/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/latent_dirichlet_allocation/lda.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/latent_dirichlet_allocation/lda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/linear_model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/linear_model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/linear_model/linear_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/linear_model/linear_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/linear_model/logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/linear_model/logistic_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/linear_model/max_entropy.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/linear_model/max_entropy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/linear_model/perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/linear_model/perceptron.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/optimization.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/optimization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/pgm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/pgm/conditional_random_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/conditional_random_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/pgm/gaussian_naive_bayes_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/gaussian_naive_bayes_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/pgm/gaussian_naive_bayes_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/gaussian_naive_bayes_cluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/pgm/hidden_markov_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/hidden_markov_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/pgm/naive_bayes_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/naive_bayes_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/pgm/naive_bayes_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/naive_bayes_cluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/pgm/page_rank.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/page_rank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/pgm/semi_gaussian_naive_bayes_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/semi_gaussian_naive_bayes_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/pgm/simple_markov_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/simple_markov_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/svm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/svm/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/svm/hard_margin_svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/svm/hard_margin_svm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/svm/soft_margin_svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/svm/soft_margin_svm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/svm/svc.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/svm/svc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/tree/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/tree/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/tree/cart_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/tree/cart_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/tree/cart_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/tree/cart_regressor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/tree/decision_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/tree/decision_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/vi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/vi/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/vi/gmm.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/vi/gmm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/vi/linear_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/vi/linear_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/wrapper_models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/wrapper_models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/wrapper_models/data_bin_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/wrapper_models/data_bin_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/wrapper_models/multi_class_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/wrapper_models/multi_class_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/data/people_daily_mini.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/data/people_daily_mini.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/data/toutiao_mini.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/data/toutiao_mini.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/adaboost_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/adaboost_classifier_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/adaboost_regressor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/adaboost_regressor_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/agnes_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/agnes_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/bagging_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/bagging_classifier_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/cart_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/cart_classifier_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/cart_regressor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/cart_regressor_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conditional_random_field_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conditional_random_field_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/dart_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dart_classifier_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/dart_regressor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dart_regressor_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/dbscan_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dbscan_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/decision_tree_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/decision_tree_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ffm_test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ffm_test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fm_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fm_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fmm_test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fmm_test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/gaussian_naive_bayes_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gaussian_naive_bayes_classifier_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/gaussian_naive_bayes_cluster_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gaussian_naive_bayes_cluster_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/gmm_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gmm_classifier_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/gmm_cluster_test(vi).py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gmm_cluster_test(vi).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/gmm_cluster_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gmm_cluster_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/gradient_boosting_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gradient_boosting_classifier_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/gradient_boosting_regressor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gradient_boosting_regressor_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/hard_soft_margin_svm_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/hard_soft_margin_svm_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/hidden_markov_model_test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/hidden_markov_model_test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/hidden_markov_model_test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/hidden_markov_model_test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/hidden_markov_model_test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/hidden_markov_model_test3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/isomap_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/isomap_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/kmeans_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/kmeans_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/lda_test(线性判别分析).py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lda_test(线性判别分析).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/lda_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lda_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/linear_regresion_test(bayes).py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/linear_regresion_test(bayes).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/linear_regresion_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/linear_regresion_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/linear_regression_test(vi).py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/linear_regression_test(vi).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/lle_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lle_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/logist_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logist_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/lvq_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lvq_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/maxent_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/maxent_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/mds_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/mds_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/naive_bayes_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/naive_bayes_classifier_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/naive_bayes_cluster_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/naive_bayes_cluster_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/pca_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pca_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/perceptron_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/perceptron_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/random_forest_regressor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/random_forest_regressor_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/random_forest_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/random_forest_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/sample_weight_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sample_weight_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/semi_gaussian_naive_bayes_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/semi_gaussian_naive_bayes_classifier_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/shap_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/shap_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/simple_markov_model_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/simple_markov_model_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/svc_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/svc_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/xgboost_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/xgboost_classifier_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/xgboost_regressor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/xgboost_regressor_test.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FavoritesManager">
-    <favorites_list name="ML_Notes" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mds_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/mds_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="isomap.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ml_models/decomposition/isomap.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="53" column="49" lean-forward="false" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="isomap_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/isomap_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lle_test.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/lle_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -110,153 +167,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/ml_models/pgm/conditional_random_field.py" />
-        <option value="$PROJECT_DIR$/tests/conditional_random_field_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/ensemble/xgboost_regressor.py" />
-        <option value="$PROJECT_DIR$/tests/xgboost_regressor_test.py" />
-        <option value="$PROJECT_DIR$/tests/gmm_cluster_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/utils.py" />
-        <option value="$PROJECT_DIR$/ml_models/em/gmm_cluster.py" />
-        <option value="$PROJECT_DIR$/tests/gmm_cluster_test(vi).py" />
-        <option value="$PROJECT_DIR$/ml_models/vi/gmm.py" />
-        <option value="$PROJECT_DIR$/ml_models/explain/__init__.py" />
-        <option value="$PROJECT_DIR$/ml_models/explain/tree_shap.h" />
-        <option value="$PROJECT_DIR$/tests/shap_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/explain/shap.py" />
-        <option value="$PROJECT_DIR$/ml_models/wrapper_models/data_bin_wrapper.py" />
-        <option value="$PROJECT_DIR$/ml_models/fm/__init__.py" />
-        <option value="$PROJECT_DIR$/tests/ffm_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/wrapper_models/multi_class_wrapper.py" />
-        <option value="$PROJECT_DIR$/tests/fmm_test2.py" />
-        <option value="$PROJECT_DIR$/ml_models/fm/ffm.py" />
-        <option value="$PROJECT_DIR$/ml_models/fm/fm.py" />
-        <option value="$PROJECT_DIR$/ml_models/bayes/__init__.py" />
-        <option value="$PROJECT_DIR$/tests/linear_regresion_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/vi/__init__.py" />
-        <option value="$PROJECT_DIR$/tests/linear_regresion_test(bayes).py" />
-        <option value="$PROJECT_DIR$/tests/linear_regression_test(vi).py" />
-        <option value="$PROJECT_DIR$/ml_models/bayes/linear_regression.py" />
-        <option value="$PROJECT_DIR$/ml_models/vi/linear_regression.py" />
-        <option value="$PROJECT_DIR$/tests/fm_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/latent_dirichlet_allocation/__init__.py" />
-        <option value="$PROJECT_DIR$/tests/lda_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/latent_dirichlet_allocation/lda.py" />
-        <option value="$PROJECT_DIR$/tests/agnes_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/cluster/agnes.py" />
-        <option value="$PROJECT_DIR$/ml_models/cluster/dbscan.py" />
-        <option value="$PROJECT_DIR$/tests/dbscan_test.py" />
-        <option value="$PROJECT_DIR$/tests/kmeans_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/cluster/kmeans.py" />
-        <option value="$PROJECT_DIR$/ml_models/cluster/__init__.py" />
-        <option value="$PROJECT_DIR$/ml_models/cluster/lvq.py" />
-        <option value="$PROJECT_DIR$/tests/lvq_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/decomposition/pca.py" />
-        <option value="$PROJECT_DIR$/tests/pca_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/decomposition/lda.py" />
-        <option value="$PROJECT_DIR$/tests/lda_test(线性判别分析).py" />
-        <option value="$PROJECT_DIR$/ml_models/decomposition/mds.py" />
-        <option value="$PROJECT_DIR$/ml_models/decomposition/isomap.py" />
-        <option value="$PROJECT_DIR$/tests/mds_test.py" />
-        <option value="$PROJECT_DIR$/tests/isomap_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/decomposition/__init__.py" />
-        <option value="$PROJECT_DIR$/tests/lle_test.py" />
-        <option value="$PROJECT_DIR$/ml_models/decomposition/lle.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
+  <component name="ProjectId" id="1jVgazELSPVLrtMLxZUgjT84tw7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ml_models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ml_models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="decomposition" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="shi&#9;null&#9;null" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="SearchEverywhereHistoryKey" value="shi&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -272,20 +192,9 @@
       <recent name="D:\OneDriverCloud\OneDrive - email.swu.edu.cn\self\learning\self_project\ML_Notes" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.lle_test">
-    <configuration default="false" name="pca_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.isomap_test">
+    <configuration name="isomap_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -296,68 +205,17 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Notes" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/pca_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="lda_test(线性判别分析)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Notes" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/lda_test(线性判别分析).py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="mds_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Notes" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/mds_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="isomap_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Notes" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/isomap_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <method />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration default="false" name="lle_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="lda_test(线性判别分析)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -368,98 +226,111 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Notes" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/lle_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/lda_test(线性判别分析).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <method />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="lle_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Notes" />
-      <option name="SCRIPT_NAME" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/lle_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <method />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
+    <configuration name="mds_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Notes" />
-      <method />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/mds_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
+    <configuration name="pca_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Notes" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/pca_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Notes" />
       <option name="_new_regexPattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
+      <method v="2" />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.pca_test" />
-      <item index="1" class="java.lang.String" itemvalue="Python.lda_test(线性判别分析)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.mds_test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.isomap_test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.lle_test" />
+    <list>
+      <item itemvalue="Python.isomap_test" />
+      <item itemvalue="Python.lda_test(线性判别分析)" />
+      <item itemvalue="Python.lle_test" />
+      <item itemvalue="Python.mds_test" />
+      <item itemvalue="Python.pca_test" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.lle_test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.mds_test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.isomap_test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.lda_test(线性判别分析)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pca_test" />
+      <list>
+        <item itemvalue="Python.isomap_test" />
+        <item itemvalue="Python.lle_test" />
+        <item itemvalue="Python.mds_test" />
+        <item itemvalue="Python.lda_test(线性判别分析)" />
+        <item itemvalue="Python.pca_test" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -482,51 +353,30 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23771368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33733624" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65502185" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="536" y="492" width="1101" height="447" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57984143" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2274678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65502185" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="536" y="492" width="1101" height="447" />
-    </layout-to-restore>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1893" height="261" key="GridCell.Tab.0.bottom" timestamp="1603895865156">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="261" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1603895865156" />
+    <state width="1893" height="261" key="GridCell.Tab.0.center" timestamp="1603895865155">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="261" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1603895865155" />
+    <state width="1893" height="261" key="GridCell.Tab.0.left" timestamp="1603895865155">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="261" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1603895865155" />
+    <state width="1893" height="261" key="GridCell.Tab.0.right" timestamp="1603895865156">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="261" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1603895865156" />
+    <state x="362" y="162" width="1037" height="737" key="SettingsEditor" timestamp="1603895399514">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="362" y="162" width="1037" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1603895399514" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -552,9 +402,6 @@
           <option name="timeStamp" value="601" />
         </line-breakpoint>
       </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -562,7 +409,6 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="637" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -572,350 +418,6 @@
         <watch expression="self.class_label[bst_cid]" language="Python" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/fmm_test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="51" column="48" lean-forward="false" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/fm/ffm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1178">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ffm_test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/linear_model/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/fm/fm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="184" column="38" lean-forward="false" selection-start-line="184" selection-start-column="38" selection-end-line="184" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/lib/index_tricks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="405" column="0" lean-forward="false" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/app/Anaconda3/Lib/site-packages/matplotlib/pyplot.py" />
-    <entry file="file://$PROJECT_DIR$/tests/linear_regresion_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/vi/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/linear_regresion_test(bayes).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/linear_regression_test(vi).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/bayes/linear_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="167" column="18" lean-forward="true" selection-start-line="164" selection-start-column="8" selection-end-line="167" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/vi/linear_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4255">
-          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/explain/shap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/shap_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fm_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/linear_model/linear_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3059">
-          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="143" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/fm/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/logist_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="53" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/latent_dirichlet_allocation/__init__.py" />
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/core/numeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="90" column="16" lean-forward="true" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/lda_test.py" />
-    <entry file="file://$PROJECT_DIR$/ml_models/bayes/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/gmm_cluster_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/gmm_cluster_test(vi).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/gmm_classifier_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/cluster/agnes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1357">
-          <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/bagging_classifier_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/dbscan_test.py" />
-    <entry file="file://$PROJECT_DIR$/ml_models/cluster/dbscan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/agnes_test.py" />
-    <entry file="file://$PROJECT_DIR$/ml_models/cluster/kmeans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="59" column="37" lean-forward="false" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/lvq_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/kmeans_test.py" />
-    <entry file="file://$PROJECT_DIR$/ml_models/latent_dirichlet_allocation/lda.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3744">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/cluster/lvq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="57" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/cluster/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/perceptron_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/decomposition/pca.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/lda_test(线性判别分析).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/decomposition/lda.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/pca_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/decomposition/mds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/mds_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/decomposition/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/isomap_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/decomposition/isomap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="53" column="49" lean-forward="false" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_models/decomposition/lle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/lle_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
