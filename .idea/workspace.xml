@@ -1,132 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8e8d831f-9ae1-413c-88f4-a88b05385b47" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ML_Notes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML_Notes.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ml_models/cluster/spectral.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/spectral_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/bayes/linear_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/bayes/linear_regression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ml_models/cluster/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/cluster/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/cluster/agnes.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/cluster/agnes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/cluster/dbscan.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/cluster/dbscan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/cluster/kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/cluster/kmeans.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/cluster/lvq.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/cluster/lvq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/isomap.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/isomap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/lda.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/lda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/lle.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/lle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/mds.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/mds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/pca.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/em/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/em/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/em/gmm_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/em/gmm_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/em/gmm_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/em/gmm_cluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/adaboost_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/adaboost_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/adaboost_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/adaboost_regressor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/bagging_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/bagging_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/bagging_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/bagging_regressor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/dart_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/dart_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/dart_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/dart_regressor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/gradient_boosting_regressor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/random_forest_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/random_forest_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/random_forest_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/random_forest_regressor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/xgboost_base_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/xgboost_base_tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/xgboost_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/xgboost_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/ensemble/xgboost_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/ensemble/xgboost_regressor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/explain/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/explain/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/explain/shap.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/explain/shap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/explain/tree_shap.h" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/explain/tree_shap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/fm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/fm/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/fm/ffm.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/fm/ffm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/fm/fm.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/fm/fm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/kernel_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/kernel_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/latent_dirichlet_allocation/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/latent_dirichlet_allocation/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/latent_dirichlet_allocation/lda.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/latent_dirichlet_allocation/lda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/linear_model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/linear_model/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/linear_model/linear_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/linear_model/linear_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/linear_model/logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/linear_model/logistic_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/linear_model/max_entropy.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/linear_model/max_entropy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/linear_model/perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/linear_model/perceptron.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/optimization.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/optimization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/pgm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/pgm/conditional_random_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/conditional_random_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/pgm/gaussian_naive_bayes_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/gaussian_naive_bayes_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/pgm/gaussian_naive_bayes_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/gaussian_naive_bayes_cluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/pgm/hidden_markov_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/hidden_markov_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/pgm/naive_bayes_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/naive_bayes_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/pgm/naive_bayes_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/naive_bayes_cluster.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/pgm/page_rank.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/page_rank.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/pgm/semi_gaussian_naive_bayes_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/semi_gaussian_naive_bayes_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/pgm/simple_markov_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/pgm/simple_markov_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/svm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/svm/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/svm/hard_margin_svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/svm/hard_margin_svm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/svm/soft_margin_svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/svm/soft_margin_svm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/svm/svc.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/svm/svc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/tree/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/tree/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/tree/cart_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/tree/cart_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/tree/cart_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/tree/cart_regressor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/tree/decision_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/tree/decision_tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/vi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/vi/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/vi/gmm.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/vi/gmm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/vi/linear_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/vi/linear_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/wrapper_models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/wrapper_models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/wrapper_models/data_bin_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/wrapper_models/data_bin_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/wrapper_models/multi_class_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/wrapper_models/multi_class_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/data/people_daily_mini.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/data/people_daily_mini.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/data/toutiao_mini.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/data/toutiao_mini.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/adaboost_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/adaboost_classifier_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/adaboost_regressor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/adaboost_regressor_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/agnes_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/agnes_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bagging_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/bagging_classifier_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/cart_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/cart_classifier_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/cart_regressor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/cart_regressor_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conditional_random_field_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conditional_random_field_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/dart_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dart_classifier_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/dart_regressor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dart_regressor_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/dbscan_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dbscan_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/decision_tree_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/decision_tree_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ffm_test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ffm_test1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/fm_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fm_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/fmm_test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fmm_test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/gaussian_naive_bayes_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gaussian_naive_bayes_classifier_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/gaussian_naive_bayes_cluster_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gaussian_naive_bayes_cluster_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/gmm_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gmm_classifier_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/gmm_cluster_test(vi).py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gmm_cluster_test(vi).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/gmm_cluster_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gmm_cluster_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/gradient_boosting_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gradient_boosting_classifier_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/gradient_boosting_regressor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gradient_boosting_regressor_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/hard_soft_margin_svm_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/hard_soft_margin_svm_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/hidden_markov_model_test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/hidden_markov_model_test1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/hidden_markov_model_test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/hidden_markov_model_test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/hidden_markov_model_test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/hidden_markov_model_test3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/isomap_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/isomap_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/kmeans_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/kmeans_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lda_test(线性判别分析).py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lda_test(线性判别分析).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lda_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lda_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/linear_regresion_test(bayes).py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/linear_regresion_test(bayes).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/linear_regresion_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/linear_regresion_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/linear_regression_test(vi).py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/linear_regression_test(vi).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lle_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lle_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logist_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logist_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lvq_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lvq_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/maxent_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/maxent_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/18_06_聚类_谱聚类.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/18_06_聚类_谱聚类.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/mds_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/mds_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/naive_bayes_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/naive_bayes_classifier_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/naive_bayes_cluster_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/naive_bayes_cluster_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pca_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pca_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/perceptron_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/perceptron_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/random_forest_regressor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/random_forest_regressor_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/random_forest_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/random_forest_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/sample_weight_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sample_weight_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/semi_gaussian_naive_bayes_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/semi_gaussian_naive_bayes_classifier_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/shap_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/shap_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/simple_markov_model_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/simple_markov_model_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/svc_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/svc_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/xgboost_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/xgboost_classifier_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/xgboost_regressor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/xgboost_regressor_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +75,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="shi&#9;null&#9;null" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -192,7 +91,7 @@
       <recent name="D:\OneDriverCloud\OneDrive - email.swu.edu.cn\self\learning\self_project\ML_Notes" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.isomap_test">
+  <component name="RunManager" selected="Python.spectral_test">
     <configuration name="isomap_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -277,7 +176,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pca_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="spectral_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -289,7 +188,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/pca_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/spectral_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -318,15 +217,15 @@
       <item itemvalue="Python.lda_test(线性判别分析)" />
       <item itemvalue="Python.lle_test" />
       <item itemvalue="Python.mds_test" />
-      <item itemvalue="Python.pca_test" />
+      <item itemvalue="Python.spectral_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.spectral_test" />
+        <item itemvalue="Python.mds_test" />
         <item itemvalue="Python.isomap_test" />
         <item itemvalue="Python.lle_test" />
-        <item itemvalue="Python.mds_test" />
         <item itemvalue="Python.lda_test(线性判别分析)" />
-        <item itemvalue="Python.pca_test" />
       </list>
     </recent_temporary>
   </component>
@@ -353,30 +252,61 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1893" height="261" key="GridCell.Tab.0.bottom" timestamp="1603895865156">
+    <state width="1893" height="255" key="GridCell.Tab.0.bottom" timestamp="1604748303313">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1893" height="261" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1603895865156" />
-    <state width="1893" height="261" key="GridCell.Tab.0.center" timestamp="1603895865155">
+    <state width="1893" height="255" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303313" />
+    <state width="1893" height="255" key="GridCell.Tab.0.center" timestamp="1604748303313">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1893" height="261" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1603895865155" />
-    <state width="1893" height="261" key="GridCell.Tab.0.left" timestamp="1603895865155">
+    <state width="1893" height="255" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303313" />
+    <state width="1893" height="255" key="GridCell.Tab.0.left" timestamp="1604748303312">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1893" height="261" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1603895865155" />
-    <state width="1893" height="261" key="GridCell.Tab.0.right" timestamp="1603895865156">
+    <state width="1893" height="255" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303312" />
+    <state width="1893" height="255" key="GridCell.Tab.0.right" timestamp="1604748303313">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1893" height="261" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1603895865156" />
-    <state x="362" y="162" width="1037" height="737" key="SettingsEditor" timestamp="1603895399514">
+    <state width="1893" height="255" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303313" />
+    <state width="1893" height="255" key="GridCell.Tab.1.bottom" timestamp="1604748303317">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="362" y="162" width="1037" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1603895399514" />
+    <state width="1893" height="255" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303317" />
+    <state width="1893" height="255" key="GridCell.Tab.1.center" timestamp="1604748303317">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="255" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303317" />
+    <state width="1893" height="255" key="GridCell.Tab.1.left" timestamp="1604748303316">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="255" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303316" />
+    <state width="1893" height="255" key="GridCell.Tab.1.right" timestamp="1604748303317">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1893" height="255" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303317" />
+    <state x="396" y="112" width="1037" height="737" key="SettingsEditor" timestamp="1604745364502">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="396" y="112" width="1037" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1604745364502" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1604745534591">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1604745534591" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -401,6 +331,16 @@
           <line>22</line>
           <option name="timeStamp" value="601" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ml_models/cluster/spectral.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="602" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ml_models/cluster/spectral.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="604" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -415,7 +355,8 @@
         <watch expression="range(0,0)" language="Python" />
         <watch expression="list(range(0,0))" language="Python" />
         <watch expression="list(range(0,0,-1))" language="Python" />
-        <watch expression="self.class_label[bst_cid]" language="Python" />
+        <watch expression="np.sqrt(np.sum(np.power(transform_matrix, 2), axis=0, keepdims=True))" language="Python" />
+        <watch expression="np.sqrt(np.sum(np.power(transform_matrix, 2), axis=1, keepdims=True))" language="Python" />
       </configuration>
     </watches-manager>
   </component>

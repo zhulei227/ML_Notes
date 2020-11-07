@@ -168,6 +168,8 @@
 
 [18_05_聚类_原型聚类_LVQ](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/18_05_%E8%81%9A%E7%B1%BB_%E5%8E%9F%E5%9E%8B%E8%81%9A%E7%B1%BB_LVQ.ipynb)
 
+[18_06_聚类_谱聚类](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/18_06_%E8%81%9A%E7%B1%BB_%E8%B0%B1%E8%81%9A%E7%B1%BB.ipynb)
+
 [19_01_降维_奇异值分解(SVD)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/19_01_%E9%99%8D%E7%BB%B4_%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3(SVD).ipynb)
 
 [19_02_降维_主成分分析(PCA)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/19_02_%E9%99%8D%E7%BB%B4_%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90(PCA).ipynb)
