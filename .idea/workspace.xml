@@ -20,12 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e8d831f-9ae1-413c-88f4-a88b05385b47" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ml_models/cluster/spectral.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/spectral_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ml_models/decomposition/nmf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/nmf_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/cluster/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/cluster/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/18_06_聚类_谱聚类.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/18_06_聚类_谱聚类.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/mds_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/mds_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/19_06_降维_流形学习_局部线性嵌入(LLE).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/19_06_降维_流形学习_局部线性嵌入(LLE).ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,30 +37,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>1e-7</find>
-      <find>match_feature_funcs_num</find>
-      <find>get_feature_funcs_num</find>
-      <find>C</find>
-      <find>self.C</find>
-      <find>min_samples_leaf</find>
-      <find>target_distribute</find>
-      <find>self.sample_weight</find>
-      <find>self.sample</find>
-      <find>sample_weight</find>
-      <find>self.p_x_y[k][j][x_j] = np.log(np.sum(W[:, k]</find>
-      <find>np.log(</find>
-      <find>PathElement</find>
-      <find>tree_shap_recursive</find>
-      <find>tree_shap</find>
-      <find>tree_shap_re</find>
-      <find>first</find>
-      <find>tree_shap_rec</find>
-      <find>unwind_path</find>
-      <find>tree_shap_</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,7 +66,7 @@
       <recent name="D:\OneDriverCloud\OneDrive - email.swu.edu.cn\self\learning\self_project\ML_Notes" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.spectral_test">
+  <component name="RunManager" selected="Python.nmf_test">
     <configuration name="isomap_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,48 +88,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lda_test(线性判别分析)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML_Notes" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/lda_test(线性判别分析).py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lle_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML_Notes" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/lle_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="mds_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,6 +101,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/mds_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="nmf_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML_Notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/nmf_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pca_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML_Notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/pca_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,18 +189,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.isomap_test" />
-      <item itemvalue="Python.lda_test(线性判别分析)" />
-      <item itemvalue="Python.lle_test" />
       <item itemvalue="Python.mds_test" />
       <item itemvalue="Python.spectral_test" />
+      <item itemvalue="Python.pca_test" />
+      <item itemvalue="Python.nmf_test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.spectral_test" />
+        <item itemvalue="Python.nmf_test" />
         <item itemvalue="Python.mds_test" />
+        <item itemvalue="Python.pca_test" />
+        <item itemvalue="Python.spectral_test" />
         <item itemvalue="Python.isomap_test" />
-        <item itemvalue="Python.lle_test" />
-        <item itemvalue="Python.lda_test(线性判别分析)" />
       </list>
     </recent_temporary>
   </component>
@@ -262,43 +237,44 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1893" height="255" key="GridCell.Tab.0.bottom" timestamp="1604748303313">
+    <state width="1893" height="254" key="GridCell.Tab.0.bottom" timestamp="1605451849304">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1893" height="255" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303313" />
-    <state width="1893" height="255" key="GridCell.Tab.0.center" timestamp="1604748303313">
+    <state width="1893" height="254" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849304" />
+    <state width="1893" height="254" key="GridCell.Tab.0.center" timestamp="1605451849304">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1893" height="255" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303313" />
-    <state width="1893" height="255" key="GridCell.Tab.0.left" timestamp="1604748303312">
+    <state width="1893" height="254" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849303" />
+    <state width="1893" height="254" key="GridCell.Tab.0.left" timestamp="1605451849303">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1893" height="255" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303312" />
-    <state width="1893" height="255" key="GridCell.Tab.0.right" timestamp="1604748303313">
+    <state width="1893" height="254" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849303" />
+    <state width="1893" height="254" key="GridCell.Tab.0.right" timestamp="1605451849304">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1893" height="255" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303313" />
-    <state width="1893" height="255" key="GridCell.Tab.1.bottom" timestamp="1604748303317">
+    <state width="1893" height="254" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849304" />
+    <state width="1893" height="254" key="GridCell.Tab.1.bottom" timestamp="1605451849305">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1893" height="255" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303317" />
-    <state width="1893" height="255" key="GridCell.Tab.1.center" timestamp="1604748303317">
+    <state width="1893" height="254" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849305" />
+    <state width="1893" height="254" key="GridCell.Tab.1.center" timestamp="1605451849304">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1893" height="255" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303317" />
-    <state width="1893" height="255" key="GridCell.Tab.1.left" timestamp="1604748303316">
+    <state width="1893" height="254" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849304" />
+    <state width="1893" height="254" key="GridCell.Tab.1.left" timestamp="1605451849304">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1893" height="255" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303316" />
-    <state width="1893" height="255" key="GridCell.Tab.1.right" timestamp="1604748303317">
+    <state width="1893" height="254" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849304" />
+    <state width="1893" height="254" key="GridCell.Tab.1.right" timestamp="1605451849305">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1893" height="255" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1604748303317" />
+    <state width="1893" height="254" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849305" />
     <state x="396" y="112" width="1037" height="737" key="SettingsEditor" timestamp="1604745364502">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -355,8 +331,8 @@
         <watch expression="range(0,0)" language="Python" />
         <watch expression="list(range(0,0))" language="Python" />
         <watch expression="list(range(0,0,-1))" language="Python" />
-        <watch expression="np.sqrt(np.sum(np.power(transform_matrix, 2), axis=0, keepdims=True))" language="Python" />
-        <watch expression="np.sqrt(np.sum(np.power(transform_matrix, 2), axis=1, keepdims=True))" language="Python" />
+        <watch expression="np.mean(np.abs(W - W_u))" language="Python" />
+        <watch expression="x1.dot(x2)" language="Python" />
       </configuration>
     </watches-manager>
   </component>

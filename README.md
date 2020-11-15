@@ -182,7 +182,7 @@
 
 [19_06_降维_流形学习_局部线性嵌入(LLE)](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/19_06_%E9%99%8D%E7%BB%B4_%E6%B5%81%E5%BD%A2%E5%AD%A6%E4%B9%A0_%E5%B1%80%E9%83%A8%E7%BA%BF%E6%80%A7%E5%B5%8C%E5%85%A5(LLE).ipynb)
 
-
+[19_07_降维_非负矩阵分解_NMF](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/19_07_%E9%99%8D%E7%BB%B4_%E9%9D%9E%E8%B4%9F%E7%9F%A9%E9%98%B5%E5%88%86%E8%A7%A3_NMF.ipynb)
 
 ### 参考
 
