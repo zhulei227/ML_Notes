@@ -20,11 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e8d831f-9ae1-413c-88f4-a88b05385b47" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ml_models/decomposition/nmf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/nmf_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ml_models/odd_detect/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ml_models/odd_detect/hbos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/hbos_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ML_Notes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML_Notes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/decomposition/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/decomposition/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/19_06_降维_流形学习_局部线性嵌入(LLE).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/19_06_降维_流形学习_局部线性嵌入(LLE).ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/adaboost_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/adaboost_classifier_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +50,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="shi&#9;null&#9;null" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -66,8 +70,8 @@
       <recent name="D:\OneDriverCloud\OneDrive - email.swu.edu.cn\self\learning\self_project\ML_Notes" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.nmf_test">
-    <configuration name="isomap_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.hbos_test">
+    <configuration name="hbos_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,7 +83,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/isomap_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/hbos_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,19 +192,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.isomap_test" />
       <item itemvalue="Python.mds_test" />
       <item itemvalue="Python.spectral_test" />
       <item itemvalue="Python.pca_test" />
       <item itemvalue="Python.nmf_test" />
+      <item itemvalue="Python.hbos_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hbos_test" />
         <item itemvalue="Python.nmf_test" />
         <item itemvalue="Python.mds_test" />
         <item itemvalue="Python.pca_test" />
         <item itemvalue="Python.spectral_test" />
-        <item itemvalue="Python.isomap_test" />
       </list>
     </recent_temporary>
   </component>
@@ -238,51 +242,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1893" height="254" key="GridCell.Tab.0.bottom" timestamp="1605451849304">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1893" height="254" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849304" />
-    <state width="1893" height="254" key="GridCell.Tab.0.center" timestamp="1605451849304">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1893" height="254" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849303" />
-    <state width="1893" height="254" key="GridCell.Tab.0.left" timestamp="1605451849303">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1893" height="254" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849303" />
-    <state width="1893" height="254" key="GridCell.Tab.0.right" timestamp="1605451849304">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1893" height="254" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849304" />
-    <state width="1893" height="254" key="GridCell.Tab.1.bottom" timestamp="1605451849305">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1893" height="254" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849305" />
-    <state width="1893" height="254" key="GridCell.Tab.1.center" timestamp="1605451849304">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1893" height="254" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849304" />
-    <state width="1893" height="254" key="GridCell.Tab.1.left" timestamp="1605451849304">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1893" height="254" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849304" />
-    <state width="1893" height="254" key="GridCell.Tab.1.right" timestamp="1605451849305">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1893" height="254" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1605451849305" />
-    <state x="396" y="112" width="1037" height="737" key="SettingsEditor" timestamp="1604745364502">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="396" y="112" width="1037" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1604745364502" />
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1604745534591">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1604745534591" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

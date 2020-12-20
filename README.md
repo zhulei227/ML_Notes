@@ -184,6 +184,8 @@
 
 [19_07_降维_非负矩阵分解_NMF](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/19_07_%E9%99%8D%E7%BB%B4_%E9%9D%9E%E8%B4%9F%E7%9F%A9%E9%98%B5%E5%88%86%E8%A7%A3_NMF.ipynb)
 
+[20_01_异常检测_HBOS](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/20_01_%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B_HBOS.ipynb)
+
 ### 参考
 
 《统计学习方法》第二版  --李航   
