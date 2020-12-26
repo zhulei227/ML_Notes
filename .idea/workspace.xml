@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e8d831f-9ae1-413c-88f4-a88b05385b47" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ml_models/odd_detect/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ml_models/odd_detect/hbos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/hbos_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ML_Notes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML_Notes.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ml_models/odd_detect/iforest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/iforest_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/adaboost_classifier_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/adaboost_classifier_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/odd_detect/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/odd_detect/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
       <recent name="D:\OneDriverCloud\OneDrive - email.swu.edu.cn\self\learning\self_project\ML_Notes" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.hbos_test">
+  <component name="RunManager" selected="Python.iforest_test">
     <configuration name="hbos_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,6 +81,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/hbos_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="iforest_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML_Notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/iforest_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,27 +173,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="spectral_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ML_Notes" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/spectral_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,18 +190,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.mds_test" />
-      <item itemvalue="Python.spectral_test" />
       <item itemvalue="Python.pca_test" />
       <item itemvalue="Python.nmf_test" />
       <item itemvalue="Python.hbos_test" />
+      <item itemvalue="Python.iforest_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.iforest_test" />
         <item itemvalue="Python.hbos_test" />
         <item itemvalue="Python.nmf_test" />
         <item itemvalue="Python.mds_test" />
         <item itemvalue="Python.pca_test" />
-        <item itemvalue="Python.spectral_test" />
       </list>
     </recent_temporary>
   </component>
@@ -276,6 +273,11 @@
           <line>35</line>
           <option name="timeStamp" value="604" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/iforest_test.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="611" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -290,8 +292,7 @@
         <watch expression="range(0,0)" language="Python" />
         <watch expression="list(range(0,0))" language="Python" />
         <watch expression="list(range(0,0,-1))" language="Python" />
-        <watch expression="np.mean(np.abs(W - W_u))" language="Python" />
-        <watch expression="x1.dot(x2)" language="Python" />
+        <watch expression="score" language="Python" />
       </configuration>
     </watches-manager>
   </component>
