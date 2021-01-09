@@ -186,6 +186,8 @@
 
 [20_01_异常检测_HBOS](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/20_01_%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B_HBOS.ipynb)
 
+[20_01_异常检测_pHBOS](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/20_01_%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B_pHBOS.ipynb)
+
 [20_02_异常检测_iForest](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/20_02_%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B_iForest.ipynb)
 
 [20_03_异常检测_KNN](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/20_03_%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B_KNN.ipynb)
@@ -203,3 +205,4 @@
 《徐亦达机器学习课程》  [bilibili传送门>>>](https://www.bilibili.com/video/BV1Qx411W7mf)
 
 《机器学习—白板推导系列》  [bilibili传送门>>>](https://www.bilibili.com/video/BV1Qx411W7mf)
+
