@@ -20,12 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e8d831f-9ae1-413c-88f4-a88b05385b47" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ml_models/odd_detect/phbos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/phbos_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ml_models/outlier_detect/lof.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/lof_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_models/odd_detect/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/odd_detect/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/odd_detect/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/outlier_detect/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/odd_detect/hbos.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/outlier_detect/hbos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/odd_detect/iforest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/outlier_detect/iforest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/odd_detect/knn.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/outlier_detect/knn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_models/odd_detect/phbos.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_models/outlier_detect/phbos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/20_01_异常检测_HBOS.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/20_01_异常检测_HBOS.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/20_01_异常检测_pHBOS.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/20_01_异常检测_pHBOS.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/20_02_异常检测_iForest.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/20_02_异常检测_iForest.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/20_03_异常检测_KNN.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/20_03_异常检测_KNN.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/hbos_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/hbos_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/iforest_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/iforest_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/knn_odd_detect_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/knn_odd_detect_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/phbos_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/phbos_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +80,28 @@
       <recent name="D:\OneDriverCloud\OneDrive - email.swu.edu.cn\self\learning\self_project\ML_Notes" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.lof_test">
+    <configuration name="lof_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML_Notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/lof_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pca_hbos_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ML_Notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,6 +161,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lof_test" />
         <item itemvalue="Python.phbos_test" />
         <item itemvalue="Python.phbos_test" />
       </list>
@@ -216,6 +249,7 @@
         <watch expression="range(0,0)" language="Python" />
         <watch expression="list(range(0,0))" language="Python" />
         <watch expression="list(range(0,0,-1))" language="Python" />
+        <watch expression="X.shape" language="Python" />
       </configuration>
     </watches-manager>
   </component>

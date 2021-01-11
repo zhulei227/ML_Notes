@@ -11,7 +11,7 @@ X, _ = make_classification(n_samples=1000, n_features=2,
                            n_clusters_per_class=1, weights=[0.01, 0.05, 0.94],
                            class_sep=0.8, random_state=0)
 
-from ml_models.odd_detect import HBOS
+from ml_models.outlier_detect import HBOS
 
 hbos = HBOS()
 y = hbos.fit_transform(X)

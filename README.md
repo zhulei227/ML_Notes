@@ -192,6 +192,8 @@
 
 [20_03_异常检测_KNN](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/20_03_%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B_KNN.ipynb)
 
+[20_04_异常检测_LOF](https://nbviewer.jupyter.org/github/zhulei227/ML_Notes/blob/master/notebooks/20_04_%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B_LOF.ipynb)
+
 ### 参考
 
 《统计学习方法》第二版  --李航   
